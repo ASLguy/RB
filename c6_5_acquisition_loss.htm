@@ -1,0 +1,64 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+   <title>C6.5 Acquisition Loss</title>
+   <meta name="generator" content="Help &amp; Manual" />
+   <meta name="keywords" content="" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <style type="text/css">
+     body { margin: 0px; background: #FFFFFF; }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("eASLRB5.html", "c6_5_acquisition_loss.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+<body>
+
+
+<table style="width:100%; border:none; border-spacing:0px; padding:5px; background:#99CCFF">
+  <tr style="vertical-align:middle">
+    <td style="text-align:left">
+      <h1 class="p_Heading1"><span class="f_Heading1">C6.5 Acquisition Loss</span></h1>
+
+    </td>
+  </tr>
+</table>
+
+
+<!-- Placeholder for topic body. -->
+<table style="width:100%;border:none;border-spacing:0px"><tr style="vertical-align:top"><td style="text-align:left;padding:5px">
+<h1 class="p_Heading12"><span class="f_Heading12">C6.5 Acquisition Loss</span></h1>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 10px 0px 0px 0px;"><table class="clear table" style="width:100%; border:solid 2px #000000; border-spacing:0px; border-collapse:collapse;">
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; width:624px; padding:1px; border:solid 1px #000000;"><h1 class="p_Heading1"><span class="f_Heading1"><a href="chc_chc6.htm#6.5" class="topiclink">C6.5</a> ACQUISITION LOSS</span></h1>
+</td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:1px; border:solid 1px #000000;"><p>A Gun's Acquired Target counter is removed if:</p>
+<p style="text-align: left; padding: 0px 0px 0px 17px; margin: 0px 0px 0px 0px;"><span style="font-size:14pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:17px;margin-left:-17px">&#8226;</span>the Gun leaves its present hex and/or uses Bounding First Fire vs its already-acquired target <span class="f_EXC">[EXC: Gyrostabilizer; <a href="chc_chc6.htm#6.55" class="topiclink">C6.55</a>]</span>; or</p><p style="text-align: left; padding: 0px 0px 0px 17px; margin: 0px 0px 0px 0px;"><span style="font-size:14pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:17px;margin-left:-17px">&#8226;</span>the Gun changes its CA without firing on its already-acquired target during the current phase; or</p><p style="text-align: left; padding: 0px 0px 0px 17px; margin: 0px 0px 0px 0px;"><span style="font-size:14pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:17px;margin-left:-17px">&#8226;</span>the Gun (or its CMG unless in a separate turret) fires at a different target; or</p><p style="text-align: left; padding: 0px 0px 0px 17px; margin: 0px 0px 0px 0px;"><span style="font-size:14pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:17px;margin-left:-17px">&#8226;</span>the Gun malfunctions, or fires SMOKE or Canister, or uses IFE; or</p><p style="text-align: left; padding: 0px 0px 0px 17px; margin: 0px 0px 0px 0px;"><span style="font-size:14pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:17px;margin-left:-17px">&#8226;</span>the Gun's manning Infantry becomes broken, stunned, or shocked, or fires inherent FP/SW; or</p><p style="text-align: left; padding: 0px 0px 0px 17px; margin: 0px 0px 0px 0px;"><span style="font-size:14pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:17px;margin-left:-17px">&#8226;</span>the target is no longer in the Gun's LOS (See also <a href="chc_chc6.htm#6.15" class="topiclink">C6.15</a>)</p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:1px; border:solid 1px #000000;"><p>In addition, a Gun's Area (only) Target Acquired counter is removed if:</p>
+<p style="text-align: left; padding: 0px 0px 0px 17px; margin: 0px 0px 0px 0px;"><span style="font-size:14pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;display:inline-block;width:17px;margin-left:-17px">&#8226;</span>the Gun is Stabilized and declares Bounding First Fire vs its already-acquired hex without having lost LOS to it. The removed Area Target Acquired counter is replaced by a 1/2&quot; Acquired Target counter before the attack is made (<a href="chc_chc6.htm#6.55" class="topiclink">C6.55</a>)</p></td>
+</tr>
+<tr style="text-align:left;vertical-align:top;">
+<td style="vertical-align:top; padding:1px; border:solid 1px #000000;"><p>Note that an Area Target Acquired counter cannot &quot;follow&quot; a unit that is entering a new hex. That unit would have to be reacquired (<a href="chc_chc6.htm#6.521" class="topiclink">C6.521</a>).</p>
+</td>
+</tr>
+</table>
+</div>
+
+</td></tr></table>
+
+</body>
+</html>

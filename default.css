@@ -1,0 +1,207 @@
+/* Text Styles */
+hr { color: #000000}
+body, table, tr, th /* Normal */
+{
+ font-size: 14pt;
+ font-family: Calibri;
+ font-style: normal;
+ font-weight: normal;
+ color: #000000;
+ text-decoration: none;
+}
+span.f_Attacker /* Attacker */
+{
+ font-weight: bold;
+ color: #ff0000;
+}
+span.f_CodeExample /* Code Example */
+{
+ font-size: 8pt;
+ font-family: 'Courier New';
+}
+span.f_Comment /* Comment */
+{
+}
+span.f_CorrectOverline /* CorrectOverline */
+{
+ background-color: #00ff00;
+}
+span.f_Defender /* Defender */
+{
+ font-weight: bold;
+ color: #3366ff;
+}
+span.f_Emphasis /* Emphasis */
+{
+ font-style: italic;
+}
+span.f_Erratastrikethrough /* Errata strikethrough */
+{
+ background-color: #ffff00;
+ text-decoration: line-through;
+}
+span.f_Example /* Example */
+{
+ font-size: 12pt;
+}
+span.f_EXC /* EXC */
+{
+ font-style: italic;
+}
+span.f_Exponent /* Exponent */
+{
+ font-size: 10pt;
+ vertical-align: super;
+}
+span.f_Heading1 /* Heading1 */
+{
+ font-size: 18pt;
+ font-weight: bold;
+}
+span.f_Heading12 /* Heading12 */
+{
+ font-size: 24pt;
+ font-weight: bold;
+}
+span.f_Highlight /* Highlight */
+{
+ background-color: #ffff00;
+}
+span.f_ImageCaption /* Image Caption */
+{
+ font-weight: bold;
+}
+span.f_LCChartColor /* LC Chart Color */
+{
+ color: #008080;
+}
+span.f_LCChartColor2 /* LC Chart Color2 */
+{
+ color: #ff0000;
+}
+span.f_Notes /* Notes */
+{
+}
+span.f_Overline /* Overline */
+{
+ text-decoration: line-through;
+}
+span.f_PerrySez /* Perry Sez */
+{
+ font-family: 'Courier New';
+}
+span.f_SmallerTableFont /* Smaller Table Font */
+{
+ font-size: 9pt;
+}
+span.f_Strikethrough /* Strikethrough */
+{
+ text-decoration: line-through;
+}
+span.f_Strong /* Strong */
+{
+ font-weight: bold;
+}
+/* Paragraph styles */
+p /* Normal */
+{
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.p_Attacker /* Attacker */
+{
+}
+.p_CodeExample /* Code Example */
+{
+ white-space: nowrap;
+ margin: 0px 0px 0px 0px;
+}
+.p_Comment /* Comment */
+{
+}
+.p_CorrectOverline /* CorrectOverline */
+{
+}
+.p_Defender /* Defender */
+{
+}
+.p_Emphasis /* Emphasis */
+{
+}
+.p_Erratastrikethrough /* Errata strikethrough */
+{
+}
+.p_Example /* Example */
+{
+ margin: 0px 0px 5px 0px;
+}
+.p_EXC /* EXC */
+{
+}
+.p_Exponent /* Exponent */
+{
+}
+.p_Heading1 /* Heading1 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.p_Heading12 /* Heading12 */
+{
+ font-size: 100%;
+ font-weight: normal;
+ text-align: left;
+ text-indent: 0px;
+ padding: 0px 0px 0px 0px;
+ margin: 10px 0px 0px 0px;
+}
+.p_Highlight /* Highlight */
+{
+}
+.p_ImageCaption /* Image Caption */
+{
+}
+.p_LCChartColor /* LC Chart Color */
+{
+}
+.p_LCChartColor2 /* LC Chart Color2 */
+{
+}
+.p_Notes /* Notes */
+{
+}
+.p_Overline /* Overline */
+{
+}
+.p_PerrySez /* Perry Sez */
+{
+ margin: 2px 0px 0px 0px;
+}
+.p_SmallerTableFont /* Smaller Table Font */
+{
+ margin: 0px 0px 0px 0px;
+}
+.p_Strikethrough /* Strikethrough */
+{
+}
+.p_Strong /* Strong */
+{
+}
+
+
+#hmlightbox /* image lightbox */
+{
+  border: none;
+  padding: 8px;
+  background: #FFF;
+  font-size: 110%;
+  font-weight: bold;
+  color: #777;
+  box-shadow: 5px 5px 5px #888;
+}

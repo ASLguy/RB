@@ -1,0 +1,1317 @@
+﻿<!DOCTYPE HTML>
+<html><head>
+   <title>eASLRB</title>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+   <!-- This line includes the general project style sheet (not required) -->
+   <meta http-equiv="Content-Style-Type" content="text/css" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+
+   <!-- This block defines the styles of the TOC headings, change them as needed -->
+   <style type="text/css">
+       .navtitle { font-size: 14pt; font-weight: bold; margin-bottom: 16px; }
+       .navbar   { font-size: 10pt; }
+
+       .heading1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 12pt; color: #000000; text-decoration: none; }
+       .heading2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #000000; text-decoration: none; }
+       .heading3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #000000; text-decoration: none; }
+       .heading4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #000000; text-decoration: none; }
+       .heading5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #000000; text-decoration: none; }
+       .heading6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #000000; text-decoration: none; }
+
+       .hilight1 { font-family: Arial,Helvetica; font-weight: normal; font-size: 12pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight2 { font-family: Arial,Helvetica; font-weight: normal; font-size: 10pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight3 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight4 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight5 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+       .hilight6 { font-family: Arial,Helvetica; font-weight: normal; font-size: 9pt; color: #FFFFFF; background: #002682; text-decoration: none; }
+
+       TD.toc { padding-bottom: 2px; padding-right: 4px }
+   </style>
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript">
+     var parentScope = (parent.hmNavigationFrame);
+     if (!parentScope) {
+		      var s = document.createElement("script");
+		      s.setAttribute("type","text/javascript");
+		      s.setAttribute("src", "helpman_navigation.js");
+		      document.getElementsByTagName("head")[0].appendChild(s);
+	    }
+     else {
+       if (initialtocstate != "expandall") parent.hmAddCss(document, "#toc li ul { display: none }");
+     }
+     function loadicons() { var icons = new Array(); for (i=0; i<arguments.length; i++) { icons[i] = new Image(); icons[i].src = arguments[i]; } }
+     function loadtoc() { if (parentScope) parent.loadstate(document.getElementById("toc")); else loadstate(document.getElementById("toc")); }
+     function savetoc() { if (parentScope) parent.savestate(document.getElementById("toc")); else savestate(document.getElementById("toc")); }
+     function clicked(node, event) { deselect(); if (parentScope) parent.hmNodeClicked(node, event); else hmNodeClicked(node, event); }
+     function dblclicked(node) { if (parentScope) parent.hmNodeDblclicked(node); else hmNodeDblclicked(node); }
+     function deselect() { if (window.getSelection) window.getSelection().removeAllRanges(); else if (document.selection) document.selection.empty(); }
+     $(document).ready(function(){
+       loadtoc();
+       $(window).onunload = savetoc;
+     });
+   </script>
+</head>
+<body style="background: #FFFFFF; url(null) fixed no-repeat">
+<p class="navtitle">eASLRB</p>
+<p class="navbar">
+<b>Contents</b>
+ | <a href="easlrb4_kwindex.htm">Index</a>
+ | <a href="easlrb4_ftsearch.htm">Search</a>
+</p><hr size="1" />
+
+<!-- Place holder for the TOC - this variable is REQUIRED! -->
+<ul id="toc"style="list-style-type:none;display:block;padding-left:0;margin:0">
+<li class="heading1" id="i1"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a1" href="index.htm" target="hmcontent"><span class="heading1" id="s1">ASLeRB</span></a>
+</li>
+<li class="heading1" id="i2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a2" href="chintro_chintrointro.htm" target="hmcontent"><span class="heading1" id="s2" ondblclick="return dblclicked(this)">Introduction</span></a>
+<ul id="ul2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.1" href="chintro_chintro2nd.htm" target="hmcontent"><span class="heading2" id="s2.1">Introduction to the 2nd Edition</span></a>
+</li>
+<li class="heading2" id="i2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.2" href="chintro_chintronumbering.htm" target="hmcontent"><span class="heading2" id="s2.2">The Numbering System</span></a>
+</li>
+<li class="heading2" id="i2.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a2.3" href="chintro_chintrotoc.htm" target="hmcontent"><span class="heading2" id="s2.3">ASL Rulebook Table of Contents</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i3" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a3" href="index2.htm" target="hmcontent"><span class="heading1" id="s3" ondblclick="return dblclicked(this)">Index</span></a>
+<ul id="ul3"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i3.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.1" href="a.htm" target="hmcontent"><span class="heading2" id="s3.1">A</span></a>
+</li>
+<li class="heading2" id="i3.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.2" href="b.htm" target="hmcontent"><span class="heading2" id="s3.2">B</span></a>
+</li>
+<li class="heading2" id="i3.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.3" href="c.htm" target="hmcontent"><span class="heading2" id="s3.3">C</span></a>
+</li>
+<li class="heading2" id="i3.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.4" href="d.htm" target="hmcontent"><span class="heading2" id="s3.4">D</span></a>
+</li>
+<li class="heading2" id="i3.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.5" href="e.htm" target="hmcontent"><span class="heading2" id="s3.5">E</span></a>
+</li>
+<li class="heading2" id="i3.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.6" href="f.htm" target="hmcontent"><span class="heading2" id="s3.6">F</span></a>
+</li>
+<li class="heading2" id="i3.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.7" href="g.htm" target="hmcontent"><span class="heading2" id="s3.7">G</span></a>
+</li>
+<li class="heading2" id="i3.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.8" href="h.htm" target="hmcontent"><span class="heading2" id="s3.8">H</span></a>
+</li>
+<li class="heading2" id="i3.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.9" href="i.htm" target="hmcontent"><span class="heading2" id="s3.9">I</span></a>
+</li>
+<li class="heading2" id="i3.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.10" href="j.htm" target="hmcontent"><span class="heading2" id="s3.10">J</span></a>
+</li>
+<li class="heading2" id="i3.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.11" href="k.htm" target="hmcontent"><span class="heading2" id="s3.11">K</span></a>
+</li>
+<li class="heading2" id="i3.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.12" href="l.htm" target="hmcontent"><span class="heading2" id="s3.12">L</span></a>
+</li>
+<li class="heading2" id="i3.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.13" href="m.htm" target="hmcontent"><span class="heading2" id="s3.13">M</span></a>
+</li>
+<li class="heading2" id="i3.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.14" href="n.htm" target="hmcontent"><span class="heading2" id="s3.14">N</span></a>
+</li>
+<li class="heading2" id="i3.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.15" href="o.htm" target="hmcontent"><span class="heading2" id="s3.15">O</span></a>
+</li>
+<li class="heading2" id="i3.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.16" href="p.htm" target="hmcontent"><span class="heading2" id="s3.16">P</span></a>
+</li>
+<li class="heading2" id="i3.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.17" href="q.htm" target="hmcontent"><span class="heading2" id="s3.17">Q</span></a>
+</li>
+<li class="heading2" id="i3.18"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.18" href="r.htm" target="hmcontent"><span class="heading2" id="s3.18">R</span></a>
+</li>
+<li class="heading2" id="i3.19"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.19" href="s.htm" target="hmcontent"><span class="heading2" id="s3.19">S</span></a>
+</li>
+<li class="heading2" id="i3.20"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.20" href="t.htm" target="hmcontent"><span class="heading2" id="s3.20">T</span></a>
+</li>
+<li class="heading2" id="i3.21"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.21" href="u.htm" target="hmcontent"><span class="heading2" id="s3.21">U</span></a>
+</li>
+<li class="heading2" id="i3.22"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.22" href="v.htm" target="hmcontent"><span class="heading2" id="s3.22">V</span></a>
+</li>
+<li class="heading2" id="i3.23"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.23" href="w.htm" target="hmcontent"><span class="heading2" id="s3.23">W</span></a>
+</li>
+<li class="heading2" id="i3.24"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.24" href="x.htm" target="hmcontent"><span class="heading2" id="s3.24">X</span></a>
+</li>
+<li class="heading2" id="i3.25"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.25" href="y.htm" target="hmcontent"><span class="heading2" id="s3.25">Y</span></a>
+</li>
+<li class="heading2" id="i3.26"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a3.26" href="z.htm" target="hmcontent"><span class="heading2" id="s3.26">Z</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i4" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a4" href="asop_asopintro.htm" target="hmcontent"><span class="heading1" id="s4" ondblclick="return dblclicked(this)">Advanced Sequence of Play (ASOP)</span></a>
+<ul id="ul4"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i4.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.1" href="asop_asoppregamesequence.htm" target="hmcontent"><span class="heading2" id="s4.1">ASOP Pre-Game Sequence</span></a>
+</li>
+<li class="heading2" id="i4.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.2" href="asop_asoprally.htm" target="hmcontent"><span class="heading2" id="s4.2">ASOP Rally Phase</span></a>
+</li>
+<li class="heading2" id="i4.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.3" href="asop_asopprepfire.htm" target="hmcontent"><span class="heading2" id="s4.3">ASOP Prep Fire Phase</span></a>
+</li>
+<li class="heading2" id="i4.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.4" href="asop_asopmovement.htm" target="hmcontent"><span class="heading2" id="s4.4">ASOP Movement Phase</span></a>
+</li>
+<li class="heading2" id="i4.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.5" href="asop_asopdefensivefire.htm" target="hmcontent"><span class="heading2" id="s4.5">ASOP Defensive Fire Phase</span></a>
+</li>
+<li class="heading2" id="i4.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.6" href="asop_asopadvancingfire.htm" target="hmcontent"><span class="heading2" id="s4.6">ASOP Advancing Fire Phase</span></a>
+</li>
+<li class="heading2" id="i4.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.7" href="asop_asoprout.htm" target="hmcontent"><span class="heading2" id="s4.7">ASOP Rout Phase</span></a>
+</li>
+<li class="heading2" id="i4.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.8" href="asop_asopadvance.htm" target="hmcontent"><span class="heading2" id="s4.8">ASOP Advance Phase</span></a>
+</li>
+<li class="heading2" id="i4.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.9" href="asop_asopclosecombat.htm" target="hmcontent"><span class="heading2" id="s4.9">ASOP Close Combat Phase</span></a>
+</li>
+<li class="heading2" id="i4.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a4.10" href="asop_cross_reference.htm" target="hmcontent"><span class="heading2" id="s4.10">ASOP Cross Reference</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i5" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a5" href="cha_chaintro.htm" target="hmcontent"><span class="heading1" id="s5" ondblclick="return dblclicked(this)">Chapter A. Infantry &amp; Basic Game Rules</span></a>
+<ul id="ul5"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i5.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.1" href="cha_cha1.htm" target="hmcontent"><span class="heading2" id="s5.1">A1 Personnel Counters</span></a>
+</li>
+<li class="heading2" id="i5.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.2" href="cha_cha2.htm" target="hmcontent"><span class="heading2" id="s5.2">A2 The Mapboard</span></a>
+</li>
+<li class="heading2" id="i5.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.3" href="cha_cha3.htm" target="hmcontent"><span class="heading2" id="s5.3">A3 Basic Sequence of Play</span></a>
+</li>
+<li class="heading2" id="i5.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.4" href="cha_cha4.htm" target="hmcontent"><span class="heading2" id="s5.4">A4 Infantry Movement</span></a>
+</li>
+<li class="heading2" id="i5.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.5" href="cha_cha5.htm" target="hmcontent"><span class="heading2" id="s5.5">A5 Stacking Limits</span></a>
+</li>
+<li class="heading2" id="i5.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.6" href="cha_cha6.htm" target="hmcontent"><span class="heading2" id="s5.6">A6 Line of Sight (LOS)</span></a>
+</li>
+<li class="heading2" id="i5.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.7" href="cha_cha7.htm" target="hmcontent"><span class="heading2" id="s5.7">A7 Fire Attacks</span></a>
+</li>
+<li class="heading2" id="i5.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.8" href="cha_cha8.htm" target="hmcontent"><span class="heading2" id="s5.8">A8 Defensive Fire Principles</span></a>
+</li>
+<li class="heading2" id="i5.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.9" href="cha_cha9.htm" target="hmcontent"><span class="heading2" id="s5.9">A9 Machine Guns &amp; SW Malfunction</span></a>
+</li>
+<li class="heading2" id="i5.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.10" href="cha_cha10.htm" target="hmcontent"><span class="heading2" id="s5.10">A10 Morale</span></a>
+</li>
+<li class="heading2" id="i5.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.11" href="cha_cha11.htm" target="hmcontent"><span class="heading2" id="s5.11">A11 Close Combat (CC)</span></a>
+</li>
+<li class="heading2" id="i5.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.12" href="cha_cha12.htm" target="hmcontent"><span class="heading2" id="s5.12">A12 Concealment</span></a>
+</li>
+<li class="heading2" id="i5.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.13" href="cha_cha13.htm" target="hmcontent"><span class="heading2" id="s5.13">A13 Cavalry</span></a>
+</li>
+<li class="heading2" id="i5.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.14" href="cha_cha14.htm" target="hmcontent"><span class="heading2" id="s5.14">A14 Snipers</span></a>
+</li>
+<li class="heading2" id="i5.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.15" href="cha_cha15.htm" target="hmcontent"><span class="heading2" id="s5.15">A15 Heat of Battle</span></a>
+</li>
+<li class="heading2" id="i5.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.16" href="cha_cha16.htm" target="hmcontent"><span class="heading2" id="s5.16">A16 Battlefield Integrity</span></a>
+</li>
+<li class="heading2" id="i5.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.17" href="cha_cha17.htm" target="hmcontent"><span class="heading2" id="s5.17">A17 Wounds</span></a>
+</li>
+<li class="heading2" id="i5.18"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.18" href="cha_cha18.htm" target="hmcontent"><span class="heading2" id="s5.18">A18 Field Promotions</span></a>
+</li>
+<li class="heading2" id="i5.19"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.19" href="cha_cha19.htm" target="hmcontent"><span class="heading2" id="s5.19">A19 Unit Substitution</span></a>
+</li>
+<li class="heading2" id="i5.20"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.20" href="cha_cha20.htm" target="hmcontent"><span class="heading2" id="s5.20">A20 Prisoners</span></a>
+</li>
+<li class="heading2" id="i5.21"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.21" href="cha_cha21.htm" target="hmcontent"><span class="heading2" id="s5.21">A21 Captured Equipment</span></a>
+</li>
+<li class="heading2" id="i5.22"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.22" href="cha_cha22.htm" target="hmcontent"><span class="heading2" id="s5.22">A22 Flamethrowers &amp; Molotov Cocktails</span></a>
+</li>
+<li class="heading2" id="i5.23"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.23" href="cha_cha23.htm" target="hmcontent"><span class="heading2" id="s5.23">A23 Demolition Charges</span></a>
+</li>
+<li class="heading2" id="i5.24"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.24" href="cha_cha24.htm" target="hmcontent"><span class="heading2" id="s5.24">A24 SMOKE</span></a>
+</li>
+<li class="heading2" id="i5.25"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.25" href="cha_cha25.htm" target="hmcontent"><span class="heading2" id="s5.25">A25 Nationality Distinctions</span></a>
+</li>
+<li class="heading2" id="i5.26"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.26" href="cha_cha26.htm" target="hmcontent"><span class="heading2" id="s5.26">A26 Victory Conditions</span></a>
+</li>
+<li class="heading2" id="i5.27"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a5.27" href="cha_chafootnotes.htm" target="hmcontent"><span class="heading2" id="s5.27">Chapter A Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i6" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a6" href="chb_chbintro.htm" target="hmcontent"><span class="heading1" id="s6" ondblclick="return dblclicked(this)">Chapter B. Terrain</span></a>
+<ul id="ul6"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i6.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.1" href="chb_chb1.htm" target="hmcontent"><span class="heading2" id="s6.1">B1 Open Ground</span></a>
+</li>
+<li class="heading2" id="i6.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.2" href="chb_chb2.htm" target="hmcontent"><span class="heading2" id="s6.2">B2 Shellholes</span></a>
+</li>
+<li class="heading2" id="i6.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.3" href="chb_chb3.htm" target="hmcontent"><span class="heading2" id="s6.3">B3 Roads</span></a>
+</li>
+<li class="heading2" id="i6.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.4" href="chb_chb4.htm" target="hmcontent"><span class="heading2" id="s6.4">B4 Sunken Road</span></a>
+</li>
+<li class="heading2" id="i6.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.5" href="chb_chb5.htm" target="hmcontent"><span class="heading2" id="s6.5">B5 Elevated Road</span></a>
+</li>
+<li class="heading2" id="i6.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.6" href="chb_chb6.htm" target="hmcontent"><span class="heading2" id="s6.6">B6 Bridges</span></a>
+</li>
+<li class="heading2" id="i6.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.7" href="chb_chb7.htm" target="hmcontent"><span class="heading2" id="s6.7">B7 Runways</span></a>
+</li>
+<li class="heading2" id="i6.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.8" href="chb_chb8.htm" target="hmcontent"><span class="heading2" id="s6.8">B8 Sewers &amp; Tunnels</span></a>
+</li>
+<li class="heading2" id="i6.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.9" href="chb_chb9.htm" target="hmcontent"><span class="heading2" id="s6.9">B9 Walls &amp; Hedges</span></a>
+</li>
+<li class="heading2" id="i6.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.10" href="chb_chb10.htm" target="hmcontent"><span class="heading2" id="s6.10">B10 Hills</span></a>
+</li>
+<li class="heading2" id="i6.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.11" href="chb_chb11.htm" target="hmcontent"><span class="heading2" id="s6.11">B11 Cliffs</span></a>
+</li>
+<li class="heading2" id="i6.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.12" href="chb_chb12.htm" target="hmcontent"><span class="heading2" id="s6.12">B12 Brush</span></a>
+</li>
+<li class="heading2" id="i6.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.13" href="chb_chb13.htm" target="hmcontent"><span class="heading2" id="s6.13">B13 Woods</span></a>
+</li>
+<li class="heading2" id="i6.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.14" href="chb_chb14.htm" target="hmcontent"><span class="heading2" id="s6.14">B14 Orchard</span></a>
+</li>
+<li class="heading2" id="i6.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.15" href="chb_chb15.htm" target="hmcontent"><span class="heading2" id="s6.15">B15 Grain</span></a>
+</li>
+<li class="heading2" id="i6.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.16" href="chb_chb16.htm" target="hmcontent"><span class="heading2" id="s6.16">B16 Marsh</span></a>
+</li>
+<li class="heading2" id="i6.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.17" href="chb_chb17.htm" target="hmcontent"><span class="heading2" id="s6.17">B17 Crag</span></a>
+</li>
+<li class="heading2" id="i6.18"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.18" href="chb_chb18.htm" target="hmcontent"><span class="heading2" id="s6.18">B18 Graveyard</span></a>
+</li>
+<li class="heading2" id="i6.19"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.19" href="chb_chb19.htm" target="hmcontent"><span class="heading2" id="s6.19">B19 Gullies</span></a>
+</li>
+<li class="heading2" id="i6.20"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.20" href="chb_chb20.htm" target="hmcontent"><span class="heading2" id="s6.20">B20 Streams &amp; Crest Status</span></a>
+</li>
+<li class="heading2" id="i6.21"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.21" href="chb_chb21.htm" target="hmcontent"><span class="heading2" id="s6.21">B21 Water Obstacles</span></a>
+</li>
+<li class="heading2" id="i6.22"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.22" href="chb_chb22.htm" target="hmcontent"><span class="heading2" id="s6.22">B22 Valley</span></a>
+</li>
+<li class="heading2" id="i6.23"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.23" href="chb_chb23.htm" target="hmcontent"><span class="heading2" id="s6.23">B23 Buildings</span></a>
+</li>
+<li class="heading2" id="i6.24"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.24" href="chb_chb24.htm" target="hmcontent"><span class="heading2" id="s6.24">B24 Rubble</span></a>
+</li>
+<li class="heading2" id="i6.25"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.25" href="chb_chb25.htm" target="hmcontent"><span class="heading2" id="s6.25">B25 Fire</span></a>
+</li>
+<li class="heading2" id="i6.26"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.26" href="chb_chb26.htm" target="hmcontent"><span class="heading2" id="s6.26">B26 Wire</span></a>
+</li>
+<li class="heading2" id="i6.27"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.27" href="chb_chb27.htm" target="hmcontent"><span class="heading2" id="s6.27">B27 Entrenchments</span></a>
+</li>
+<li class="heading2" id="i6.28"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.28" href="chb_chb28.htm" target="hmcontent"><span class="heading2" id="s6.28">B28 Minefields</span></a>
+</li>
+<li class="heading2" id="i6.29"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.29" href="chb_chb29.htm" target="hmcontent"><span class="heading2" id="s6.29">B29 Roadblocks</span></a>
+</li>
+<li class="heading2" id="i6.30"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.30" href="chb_chb30.htm" target="hmcontent"><span class="heading2" id="s6.30">B30 Pillboxes</span></a>
+</li>
+<li class="heading2" id="i6.31"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.31" href="chb_chb31.htm" target="hmcontent"><span class="heading2" id="s6.31">B31 Village Terrain</span></a>
+</li>
+<li class="heading2" id="i6.32"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.32" href="chb_chb32.htm" target="hmcontent"><span class="heading2" id="s6.32">B32 Railroads</span></a>
+</li>
+<li class="heading2" id="i6.33"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.33" href="chb_chb33.htm" target="hmcontent"><span class="heading2" id="s6.33">B33 Stream-Hex Terrain</span></a>
+</li>
+<li class="heading2" id="i6.34"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.34" href="chb_chb34.htm" target="hmcontent"><span class="heading2" id="s6.34">B34 Towers</span></a>
+</li>
+<li class="heading2" id="i6.35"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a6.35" href="chb_chbfootnotes.htm" target="hmcontent"><span class="heading2" id="s6.35">Chapter B Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i7" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a7" href="chc_chcintro.htm" target="hmcontent"><span class="heading1" id="s7" ondblclick="return dblclicked(this)">Chapter C. Ordnance &amp; Offboard Artillery (OBA)</span></a>
+<ul id="ul7"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i7.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.1" href="chc_chc1.htm" target="hmcontent"><span class="heading2" id="s7.1">C1 Offboard Artillery (OBA)</span></a>
+</li>
+<li class="heading2" id="i7.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.2" href="chc_chc2.htm" target="hmcontent"><span class="heading2" id="s7.2">C2 Gun Classifications</span></a>
+</li>
+<li class="heading2" id="i7.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.3" href="chc_chc3.htm" target="hmcontent"><span class="heading2" id="s7.3">C3 The To Hit Process</span></a>
+</li>
+<li class="heading2" id="i7.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.4" href="chc_chc4.htm" target="hmcontent"><span class="heading2" id="s7.4">C4 Gun &amp; Ammo Type Basic TH# Modifications</span></a>
+</li>
+<li class="heading2" id="i7.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.5" href="chc_chc5.htm" target="hmcontent"><span class="heading2" id="s7.5">C5 Firer-Based Hit Determination DRM</span></a>
+</li>
+<li class="heading2" id="i7.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.6" href="chc_chc6.htm" target="hmcontent"><span class="heading2" id="s7.6">C6 Target-Based Hit Determination DRM</span></a>
+</li>
+<li class="heading2" id="i7.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.7" href="chc_chc7.htm" target="hmcontent"><span class="heading2" id="s7.7">C7 To Kill Tables</span></a>
+</li>
+<li class="heading2" id="i7.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.8" href="chc_chc8.htm" target="hmcontent"><span class="heading2" id="s7.8">C8 Special Ammunition</span></a>
+</li>
+<li class="heading2" id="i7.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.9" href="chc_chc9.htm" target="hmcontent"><span class="heading2" id="s7.9">C9 Mortars</span></a>
+</li>
+<li class="heading2" id="i7.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.10" href="chc_chc10.htm" target="hmcontent"><span class="heading2" id="s7.10">C10 Gun &amp; Ammo Movement</span></a>
+</li>
+<li class="heading2" id="i7.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.11" href="chc_chc11.htm" target="hmcontent"><span class="heading2" id="s7.11">C11 Guns as Targets</span></a>
+</li>
+<li class="heading2" id="i7.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.12" href="chc_chc12.htm" target="hmcontent"><span class="heading2" id="s7.12">C12 Recoilless Rifles</span></a>
+</li>
+<li class="heading2" id="i7.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.13" href="chc_chc13.htm" target="hmcontent"><span class="heading2" id="s7.13">C13 Light Anti-Tank Weapons (LATW)</span></a>
+</li>
+<li class="heading2" id="i7.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a7.14" href="chc_chcfootnotes.htm" target="hmcontent"><span class="heading2" id="s7.14">Chapter C Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i8" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a8" href="chd_chdintro.htm" target="hmcontent"><span class="heading1" id="s8" ondblclick="return dblclicked(this)">Chapter D. Vehicles</span></a>
+<ul id="ul8"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i8.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.1" href="chd_chd1.htm" target="hmcontent"><span class="heading2" id="s8.1">D1 Vehicle Counters</span></a>
+</li>
+<li class="heading2" id="i8.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.2" href="chd_chd2.htm" target="hmcontent"><span class="heading2" id="s8.2">D2 Vehicular Movement</span></a>
+</li>
+<li class="heading2" id="i8.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.3" href="chd_chd3.htm" target="hmcontent"><span class="heading2" id="s8.3">D3 AFV Combat</span></a>
+</li>
+<li class="heading2" id="i8.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.4" href="chd_chd4.htm" target="hmcontent"><span class="heading2" id="s8.4">D4 Terrain Modifications to Anti-Vehicle Fire</span></a>
+</li>
+<li class="heading2" id="i8.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.5" href="chd_chd5.htm" target="hmcontent"><span class="heading2" id="s8.5">D5 Inherent Crew</span></a>
+</li>
+<li class="heading2" id="i8.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.6" href="chd_chd6.htm" target="hmcontent"><span class="heading2" id="s8.6">D6 Transporting Personnel</span></a>
+</li>
+<li class="heading2" id="i8.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.7" href="chd_chd7.htm" target="hmcontent"><span class="heading2" id="s8.7">D7 Overruns</span></a>
+</li>
+<li class="heading2" id="i8.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.8" href="chd_chd8.htm" target="hmcontent"><span class="heading2" id="s8.8">D8 Immobilization &amp; Bog</span></a>
+</li>
+<li class="heading2" id="i8.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.9" href="chd_chd9.htm" target="hmcontent"><span class="heading2" id="s8.9">D9 Vehicles as Cover</span></a>
+</li>
+<li class="heading2" id="i8.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.10" href="chd_chd10.htm" target="hmcontent"><span class="heading2" id="s8.10">D10 Wrecks</span></a>
+</li>
+<li class="heading2" id="i8.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.11" href="chd_chd11.htm" target="hmcontent"><span class="heading2" id="s8.11">D11 Gyrostabilizers &amp; Schuerzen</span></a>
+</li>
+<li class="heading2" id="i8.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.12" href="chd_chd12.htm" target="hmcontent"><span class="heading2" id="s8.12">D12 Horse-Drawn Transport</span></a>
+</li>
+<li class="heading2" id="i8.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.13" href="chd_chd13.htm" target="hmcontent"><span class="heading2" id="s8.13">D13 Vehicular Smoke Dispensers</span></a>
+</li>
+<li class="heading2" id="i8.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.14" href="chd_chd14.htm" target="hmcontent"><span class="heading2" id="s8.14">D14 Radioless AFV</span></a>
+</li>
+<li class="heading2" id="i8.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.15" href="chd_chd15.htm" target="hmcontent"><span class="heading2" id="s8.15">D15 Motorcycles &amp; Bicycles</span></a>
+</li>
+<li class="heading2" id="i8.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.16" href="chd_chd16.htm" target="hmcontent"><span class="heading2" id="s8.16">D16 DD Tanks &amp; Amphibians</span></a>
+</li>
+<li class="heading2" id="i8.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a8.17" href="chd_chdfootnotes.htm" target="hmcontent"><span class="heading2" id="s8.17">Chapter D Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i9" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a9" href="che_cheintro.htm" target="hmcontent"><span class="heading1" id="s9" ondblclick="return dblclicked(this)">Chapter E. Miscellaneous</span></a>
+<ul id="ul9"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i9.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.1" href="che_che1.htm" target="hmcontent"><span class="heading2" id="s9.1">E1 Night</span></a>
+</li>
+<li class="heading2" id="i9.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.2" href="che_che2.htm" target="hmcontent"><span class="heading2" id="s9.2">E2 Interrogation</span></a>
+</li>
+<li class="heading2" id="i9.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.3" href="che_che3.htm" target="hmcontent"><span class="heading2" id="s9.3">E3 Weather</span></a>
+</li>
+<li class="heading2" id="i9.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.4" href="che_che4.htm" target="hmcontent"><span class="heading2" id="s9.4">E4 Ski Troops</span></a>
+</li>
+<li class="heading2" id="i9.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.5" href="che_che5.htm" target="hmcontent"><span class="heading2" id="s9.5">E5 Boats</span></a>
+</li>
+<li class="heading2" id="i9.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.6" href="che_che6.htm" target="hmcontent"><span class="heading2" id="s9.6">E6 Swimming</span></a>
+</li>
+<li class="heading2" id="i9.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.7" href="che_che7.htm" target="hmcontent"><span class="heading2" id="s9.7">E7 Air Support</span></a>
+</li>
+<li class="heading2" id="i9.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.8" href="che_che8.htm" target="hmcontent"><span class="heading2" id="s9.8">E8 Gliders</span></a>
+</li>
+<li class="heading2" id="i9.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.9" href="che_che9.htm" target="hmcontent"><span class="heading2" id="s9.9">E9 Paratroop Landings</span></a>
+</li>
+<li class="heading2" id="i9.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.10" href="che_che10.htm" target="hmcontent"><span class="heading2" id="s9.10">E10 Ammo Vehicles</span></a>
+</li>
+<li class="heading2" id="i9.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.11" href="che_che11.htm" target="hmcontent"><span class="heading2" id="s9.11">E11 Convoys</span></a>
+</li>
+<li class="heading2" id="i9.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.12" href="che_che12.htm" target="hmcontent"><span class="heading2" id="s9.12">E12 Barrage</span></a>
+</li>
+<li class="heading2" id="i9.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a9.13" href="che_chefootnotes.htm" target="hmcontent"><span class="heading2" id="s9.13">Chapter E Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i10" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a10" href="chf_chfintro.htm" target="hmcontent"><span class="heading1" id="s10" ondblclick="return dblclicked(this)">Chapter F. North Africa</span></a>
+<ul id="ul10"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i10.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.1" href="chf_chf1.htm" target="hmcontent"><span class="heading2" id="s10.1">F1 Open Ground</span></a>
+</li>
+<li class="heading2" id="i10.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.2" href="chf_chf2.htm" target="hmcontent"><span class="heading2" id="s10.2">F2 Scrub</span></a>
+</li>
+<li class="heading2" id="i10.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.3" href="chf_chf3.htm" target="hmcontent"><span class="heading2" id="s10.3">F3 Hammada</span></a>
+</li>
+<li class="heading2" id="i10.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.4" href="chf_chf4.htm" target="hmcontent"><span class="heading2" id="s10.4">F4 Deirs</span></a>
+</li>
+<li class="heading2" id="i10.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.5" href="chf_chf5.htm" target="hmcontent"><span class="heading2" id="s10.5">F5 Wadis</span></a>
+</li>
+<li class="heading2" id="i10.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.6" href="chf_chf6.htm" target="hmcontent"><span class="heading2" id="s10.6">F6 Hillocks</span></a>
+</li>
+<li class="heading2" id="i10.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.7" href="chf_chf7.htm" target="hmcontent"><span class="heading2" id="s10.7">F7 Sand</span></a>
+</li>
+<li class="heading2" id="i10.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.8" href="chf_chf8.htm" target="hmcontent"><span class="heading2" id="s10.8">F8 Sangars</span></a>
+</li>
+<li class="heading2" id="i10.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.9" href="chf_chf9.htm" target="hmcontent"><span class="heading2" id="s10.9">F9 Tracks</span></a>
+</li>
+<li class="heading2" id="i10.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.10" href="chf_chf10.htm" target="hmcontent"><span class="heading2" id="s10.10">F10 Hillside Walls &amp; Hedges</span></a>
+</li>
+<li class="heading2" id="i10.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.11" href="chf_chf11.htm" target="hmcontent"><span class="heading2" id="s10.11">F11 Arid Climactic Conditions</span></a>
+</li>
+<li class="heading2" id="i10.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.12" href="chf_chf12.htm" target="hmcontent"><span class="heading2" id="s10.12">F12 Desert Overlays</span></a>
+</li>
+<li class="heading2" id="i10.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.13" href="chf_chf13.htm" target="hmcontent"><span class="heading2" id="s10.13">F13 Alternate Terrain Types</span></a>
+</li>
+<li class="heading2" id="i10.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a10.14" href="chf_chffootnotes.htm" target="hmcontent"><span class="heading2" id="s10.14">Chapter F Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i11" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a11" href="chg_chgintro.htm" target="hmcontent"><span class="heading1" id="s11" ondblclick="return dblclicked(this)">Chapter G. Pacific Theater</span></a>
+<ul id="ul11"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i11.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.1" href="chg_chg1.htm" target="hmcontent"><span class="heading2" id="s11.1">G1 The Japanese</span></a>
+</li>
+<li class="heading2" id="i11.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.2" href="chg_chg2.htm" target="hmcontent"><span class="heading2" id="s11.2">G2 Jungle</span></a>
+</li>
+<li class="heading2" id="i11.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.3" href="chg_chg3.htm" target="hmcontent"><span class="heading2" id="s11.3">G3 Bamboo</span></a>
+</li>
+<li class="heading2" id="i11.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.4" href="chg_chg4.htm" target="hmcontent"><span class="heading2" id="s11.4">G4 Palm Trees</span></a>
+</li>
+<li class="heading2" id="i11.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.5" href="chg_chg5.htm" target="hmcontent"><span class="heading2" id="s11.5">G5 Huts</span></a>
+</li>
+<li class="heading2" id="i11.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.6" href="chg_chg6.htm" target="hmcontent"><span class="heading2" id="s11.6">G6 Kunai</span></a>
+</li>
+<li class="heading2" id="i11.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.7" href="chg_chg7.htm" target="hmcontent"><span class="heading2" id="s11.7">G7 Swamp</span></a>
+</li>
+<li class="heading2" id="i11.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.8" href="chg_chg8.htm" target="hmcontent"><span class="heading2" id="s11.8">G8 Rice Paddies</span></a>
+</li>
+<li class="heading2" id="i11.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.9" href="chg_chg9.htm" target="hmcontent"><span class="heading2" id="s11.9">G9 Panjis</span></a>
+</li>
+<li class="heading2" id="i11.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.10" href="chg_chg10.htm" target="hmcontent"><span class="heading2" id="s11.10">G10 Animal-Pack</span></a>
+</li>
+<li class="heading2" id="i11.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.11" href="chg_chg11.htm" target="hmcontent"><span class="heading2" id="s11.11">G11 Caves</span></a>
+</li>
+<li class="heading2" id="i11.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.12" href="chg_chg12.htm" target="hmcontent"><span class="heading2" id="s11.12">G12 Landing Craft</span></a>
+</li>
+<li class="heading2" id="i11.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.13" href="chg_chg13.htm" target="hmcontent"><span class="heading2" id="s11.13">G13 Beaches</span></a>
+</li>
+<li class="heading2" id="i11.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.14" href="chg_chg14.htm" target="hmcontent"><span class="heading2" id="s11.14">G14 Seaborne Assaults</span></a>
+</li>
+<li class="heading2" id="i11.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.15" href="chg_chg15.htm" target="hmcontent"><span class="heading2" id="s11.15">G15 Bulldozers</span></a>
+</li>
+<li class="heading2" id="i11.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.16" href="chg_chg16.htm" target="hmcontent"><span class="heading2" id="s11.16">G16 Tropical Climatic Conditions</span></a>
+</li>
+<li class="heading2" id="i11.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.17" href="chg_chg17.htm" target="hmcontent"><span class="heading2" id="s11.17">G17 US Marine Corps &amp; Early US Army</span></a>
+</li>
+<li class="heading2" id="i11.18"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.18" href="chg_chg18.htm" target="hmcontent"><span class="heading2" id="s11.18">G18 The Chinese</span></a>
+</li>
+<li class="heading2" id="i11.19"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a11.19" href="chg_chgfootnotes.htm" target="hmcontent"><span class="heading2" id="s11.19">Chapter G Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i12" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a12" href="chh_chh1.htm" target="hmcontent"><span class="heading1" id="s12" ondblclick="return dblclicked(this)">Chapter H. Design Your Own</span></a>
+<ul id="ul12"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i12.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.1" href="chh_chhordlistingskey.htm" target="hmcontent"><span class="heading2" id="s12.1">Chapter H Ordnance Listing Key</span></a>
+</li>
+<li class="heading2" id="i12.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.2" href="chh_chhvehlistingskey.htm" target="hmcontent"><span class="heading2" id="s12.2">Chapter H Vehicle Listing Key</span></a>
+</li>
+<li class="heading2" id="i12.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.3" href="chh_chhfootnotes.htm" target="hmcontent"><span class="heading2" id="s12.3">Chapter H Footnotes</span></a>
+</li>
+<li class="heading2" id="i12.4" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.4" href=javascript:void(0);><span class="heading2" id="s12.4" ondblclick="return dblclicked(this)">Allied Minor Notes</span></a>
+<ul id="ul12.4"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.4.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.4.1" href="chh_alliedminornotes_chhalliedminorvehlisting.htm" target="hmcontent"><span class="heading3" id="s12.4.1" ondblclick="return dblclicked(this)">Allied Minor Vehicle Listings</span></a>
+<ul id="ul12.4.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.4.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.4.1.1" href="chh_alliedminornotes_chhalliedminorvehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.4.1.1">Allied Minors Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.4.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.4.1.2" href="chh_alliedminornotes_chhmultiallminvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.4.1.2">Allied Minor Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.4.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.4.2" href="chh_alliedminornotes_chhalliedminorordlisting.htm" target="hmcontent"><span class="heading3" id="s12.4.2" ondblclick="return dblclicked(this)">Allied Minors Ordnance Listings</span></a>
+<ul id="ul12.4.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.4.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.4.2.1" href="chh_alliedminornotes_chhalliedminorordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.4.2.1">Allied Minors Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.4.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.4.2.2" href="chh_alliedminornotes_chhmultiallminordnotes.htm" target="hmcontent"><span class="heading4" id="s12.4.2.2">Allied Minor Multi-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.4.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.4.3" href="chh_alliedminornotes_chhalliedminorobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.4.3">Allied Minor DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.5" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.5" href=javascript:void(0);><span class="heading2" id="s12.5" ondblclick="return dblclicked(this)">Axis Minor Notes</span></a>
+<ul id="ul12.5"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.5.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.5.1" href="chh_axisminornotes_chhaxisminorvehlisting.htm" target="hmcontent"><span class="heading3" id="s12.5.1" ondblclick="return dblclicked(this)">Axis Minor Vehicle Listing</span></a>
+<ul id="ul12.5.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.5.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.5.1.1" href="chh_axisminornotes_chhaxisminorvehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.5.1.1">Axis Minor Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.5.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.5.1.2" href="chh_axisminornotes_chhmultiaxisminorvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.5.1.2">Axis Minor Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.5.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.5.2" href="chh_axisminornotes_chhaxisminorordlisting.htm" target="hmcontent"><span class="heading3" id="s12.5.2" ondblclick="return dblclicked(this)">Axis Minor Ordnance Listing</span></a>
+<ul id="ul12.5.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.5.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.5.2.1" href="chh_axisminornotes_chhaxisminorordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.5.2.1">Axis Minor Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.5.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.5.2.2" href="chh_axisminornotes_chhmultiaxminordnotes.htm" target="hmcontent"><span class="heading4" id="s12.5.2.2">Axis Minor Mult-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.5.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.5.3" href="chh_axisminornotes_chhaxisminorobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.5.3">Axis Minor DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.6" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.6" href=javascript:void(0);><span class="heading2" id="s12.6" ondblclick="return dblclicked(this)">British Notes</span></a>
+<ul id="ul12.6"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.6.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.6.1" href="chh_britishnotes_chhbritvehlisting.htm" target="hmcontent"><span class="heading3" id="s12.6.1" ondblclick="return dblclicked(this)">British Vehicle Listing</span></a>
+<ul id="ul12.6.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.6.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.6.1.1" href="chh_britishnotes_chhbritishvehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.6.1.1">British Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.6.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.6.1.2" href="chh_britishnotes_chhmultibritvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.6.1.2">British Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.6.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.6.2" href="chh_britishnotes_chhbritiordlisting.htm" target="hmcontent"><span class="heading3" id="s12.6.2" ondblclick="return dblclicked(this)">British Ordnance Listing</span></a>
+<ul id="ul12.6.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.6.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.6.2.1" href="chh_britishnotes_chhbritishordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.6.2.1">British Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.6.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.6.2.2" href="chh_britishnotes_chhmultibritordnotes.htm" target="hmcontent"><span class="heading4" id="s12.6.2.2">British Multi-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.6.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.6.3" href="chh_britishnotes_chhbritishobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.6.3">British DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.7" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.7" href=javascript:void(0);><span class="heading2" id="s12.7" ondblclick="return dblclicked(this)">Chinese Notes</span></a>
+<ul id="ul12.7"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.7.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.7.1" href="chh_chinesenotes_chhchinvehlisting.htm" target="hmcontent"><span class="heading3" id="s12.7.1" ondblclick="return dblclicked(this)">Chinese Vehicle Listings</span></a>
+<ul id="ul12.7.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.7.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.7.1.1" href="chh_chinesenotes_chhchinesevehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.7.1.1">Chinese Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.7.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.7.1.2" href="chh_chinesenotes_chhmultichinvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.7.1.2">Chinese Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.7.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.7.2" href="chh_chinesenotes_chhchinordlisting.htm" target="hmcontent"><span class="heading3" id="s12.7.2" ondblclick="return dblclicked(this)">Chinese Ordnance Listings</span></a>
+<ul id="ul12.7.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.7.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.7.2.1" href="chh_chinesenotes_chhchineseordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.7.2.1">Chinese Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.7.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.7.2.2" href="chh_chinesenotes_chhmultichinordnotes.htm" target="hmcontent"><span class="heading4" id="s12.7.2.2">Chinese Multi-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.7.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.7.3" href="chh_chinesenotes_chhchineseobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.7.3">Chinese DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.8" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.8" href=javascript:void(0);><span class="heading2" id="s12.8" ondblclick="return dblclicked(this)">French Notes</span></a>
+<ul id="ul12.8"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.8.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.8.1" href="chh_frenchnotes_chhfrenchvehlisting.htm" target="hmcontent"><span class="heading3" id="s12.8.1" ondblclick="return dblclicked(this)">French Vehicle Listings</span></a>
+<ul id="ul12.8.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.8.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.8.1.1" href="chh_frenchnotes_chhfrenchvehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.8.1.1">French Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.8.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.8.1.2" href="chh_frenchnotes_chhmultifrenchvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.8.1.2">French Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.8.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.8.2" href="chh_frenchnotes_chhfrenchordlisting.htm" target="hmcontent"><span class="heading3" id="s12.8.2" ondblclick="return dblclicked(this)">French Ordnance Listings</span></a>
+<ul id="ul12.8.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.8.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.8.2.1" href="chh_frenchnotes_chhfrenchordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.8.2.1">French Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.8.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.8.2.2" href="chh_frenchnotes_chhmultifrenchordnotes.htm" target="hmcontent"><span class="heading4" id="s12.8.2.2">French Mult-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.8.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.8.3" href="chh_frenchnotes_chhfrenchobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.8.3">French DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.9" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.9" href=javascript:void(0);><span class="heading2" id="s12.9" ondblclick="return dblclicked(this)">German Notes</span></a>
+<ul id="ul12.9"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.9.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.9.1" href="chh_germannotes_chhgervehlisting.htm" target="hmcontent"><span class="heading3" id="s12.9.1" ondblclick="return dblclicked(this)">German Vehicle Listing</span></a>
+<ul id="ul12.9.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.9.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.9.1.1" href="chh_germannotes_chhgermanvehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.9.1.1">German Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.9.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.9.1.2" href="chh_germannotes_chhmultigermvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.9.1.2">German Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.9.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.9.2" href="chh_germannotes_germanordnancelistings.htm" target="hmcontent"><span class="heading3" id="s12.9.2" ondblclick="return dblclicked(this)">German Ordnance Listing</span></a>
+<ul id="ul12.9.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.9.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.9.2.1" href="chh_germannotes_chhgermanordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.9.2.1">German Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.9.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.9.2.2" href="chh_germannotes_chhmultigermordnotes.htm" target="hmcontent"><span class="heading4" id="s12.9.2.2">German Multi-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.9.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.9.3" href="chh_germannotes_chhgermanobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.9.3">German and Finnish DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.10" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.10" href=javascript:void(0);><span class="heading2" id="s12.10" ondblclick="return dblclicked(this)">Italian Notes</span></a>
+<ul id="ul12.10"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.10.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.10.1" href="chh_italiannotes_chhitalvehlisting.htm" target="hmcontent"><span class="heading3" id="s12.10.1" ondblclick="return dblclicked(this)">Italian Vehicle Listings</span></a>
+<ul id="ul12.10.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.10.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.10.1.1" href="chh_italiannotes_chhitalianvehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.10.1.1">Italian Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.10.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.10.1.2" href="chh_italiannotes_chhmultiitalvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.10.1.2">Italian Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.10.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.10.2" href="chh_italiannotes_chhitalordlisting.htm" target="hmcontent"><span class="heading3" id="s12.10.2" ondblclick="return dblclicked(this)">Italian Ordnance Listings</span></a>
+<ul id="ul12.10.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.10.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.10.2.1" href="chh_italiannotes_chhitalianordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.10.2.1">Italian Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.10.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.10.2.2" href="chh_italiannotes_chhmultiitalordnotes.htm" target="hmcontent"><span class="heading4" id="s12.10.2.2">Italian Multi-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.10.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.10.3" href="chh_italiannotes_chhitalianobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.10.3">Italian DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.11" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.11" href=javascript:void(0);><span class="heading2" id="s12.11" ondblclick="return dblclicked(this)">Japanese Vehicle Notes</span></a>
+<ul id="ul12.11"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.11.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.11.1" href="chh_japanesevehiclenotes_chhjapvehlisting.htm" target="hmcontent"><span class="heading3" id="s12.11.1" ondblclick="return dblclicked(this)">Japanese Vehicle Listing</span></a>
+<ul id="ul12.11.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.11.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.11.1.1" href="chh_japanesevehiclenotes_chhjapanesevehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.11.1.1">Japanese Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.11.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.11.1.2" href="chh_japanesevehiclenotes_chhmultijapvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.11.1.2">Japanese Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.11.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.11.2" href="chh_japanesevehiclenotes_chhjapordlisting.htm" target="hmcontent"><span class="heading3" id="s12.11.2" ondblclick="return dblclicked(this)">Japanese Ordnance Listings</span></a>
+<ul id="ul12.11.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.11.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.11.2.1" href="chh_japanesevehiclenotes_chhjapaneseordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.11.2.1">Japanese Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.11.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.11.2.2" href="chh_japanesevehiclenotes_chhmultijapordnotes.htm" target="hmcontent"><span class="heading4" id="s12.11.2.2">Japanese Multi-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.11.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.11.3" href="chh_japanesevehiclenotes_chhjapaneseobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.11.3">Japanese DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.12" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.12" href=javascript:void(0);><span class="heading2" id="s12.12" ondblclick="return dblclicked(this)">Landing Craft Notes</span></a>
+<ul id="ul12.12"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.12.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.12.1" href="chh_landingcraftnotes_chhlandingcraftlisting.htm" target="hmcontent"><span class="heading3" id="s12.12.1" ondblclick="return dblclicked(this)">Landing Craft Vehicle Listing</span></a>
+<ul id="ul12.12.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.12.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.12.1.1" href="chh_landingcraftnotes_chhlandingcraftnotes.htm" target="hmcontent"><span class="heading4" id="s12.12.1.1">Landing Craft Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.12.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.12.1.2" href="chh_landingcraftnotes_chhmultiapplcnotes.htm" target="hmcontent"><span class="heading4" id="s12.12.1.2">Landing Craft Mult-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.13" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.13" href=javascript:void(0);><span class="heading2" id="s12.13" ondblclick="return dblclicked(this)">Russian Notes</span></a>
+<ul id="ul12.13"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.13.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.13.1" href="chh_russiannotes_chhrusvehlisting.htm" target="hmcontent"><span class="heading3" id="s12.13.1" ondblclick="return dblclicked(this)">Russian Vehicle Listing</span></a>
+<ul id="ul12.13.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.13.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.13.1.1" href="chh_russiannotes_chhrussianvehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.13.1.1">Russian Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.13.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.13.1.2" href="chh_russiannotes_chhmultirusvehnotes.htm" target="hmcontent"><span class="heading4" id="s12.13.1.2">Russian Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.13.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.13.2" href="chh_russiannotes_chhrusordlisting.htm" target="hmcontent"><span class="heading3" id="s12.13.2" ondblclick="return dblclicked(this)">Russian Ordnance Listing</span></a>
+<ul id="ul12.13.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.13.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.13.2.1" href="chh_russiannotes_chhrussianordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.13.2.1">Russian Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.13.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.13.2.2" href="chh_russiannotes_chhmultirusordnotes.htm" target="hmcontent"><span class="heading4" id="s12.13.2.2">Russian Multi-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.13.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.13.3" href="chh_russiannotes_chhrussianobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.13.3">Russian DYO Tables</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i12.14" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a12.14" href=javascript:void(0);><span class="heading2" id="s12.14" ondblclick="return dblclicked(this)">US Notes</span></a>
+<ul id="ul12.14"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i12.14.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.14.1" href="chh_usnotes_chhamivehlisting.htm" target="hmcontent"><span class="heading3" id="s12.14.1" ondblclick="return dblclicked(this)">US Vehicle Listing</span></a>
+<ul id="ul12.14.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.14.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.14.1.1" href="chh_usnotes_chhamericanvehiclenotes.htm" target="hmcontent"><span class="heading4" id="s12.14.1.1">US Vehicle Notes</span></a>
+</li>
+<li class="heading4" id="i12.14.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.14.1.2" href="chh_usnotes_chhmultiamivehnotes.htm" target="hmcontent"><span class="heading4" id="s12.14.1.2">US Multi-Applicable Vehicle Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.14.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.14.2" href="chh_usnotes_chhamiordlisting.htm" target="hmcontent"><span class="heading3" id="s12.14.2" ondblclick="return dblclicked(this)">US Ordnance Listing</span></a>
+<ul id="ul12.14.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading4" id="i12.14.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.14.2.1" href="chh_usnotes_chhamericanordnancenotes.htm" target="hmcontent"><span class="heading4" id="s12.14.2.1">US Ordnance Notes</span></a>
+</li>
+<li class="heading4" id="i12.14.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading4" id="a12.14.2.2" href="chh_usnotes_chhmultiamiordnotes.htm" target="hmcontent"><span class="heading4" id="s12.14.2.2">US Multi-Applicable Ordnance Notes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading3" id="i12.14.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a12.14.3" href="chh_usnotes_chhamericanobaswtables.htm" target="hmcontent"><span class="heading3" id="s12.14.3">American DYO Tables</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i13"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a13" href="chj_chapj.htm" target="hmcontent"><span class="heading1" id="s13">Chapter J. Deluxe ASL</span></a>
+</li>
+<li class="heading1" id="i14" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a14" href="chk_chkintro.htm" target="hmcontent"><span class="heading1" id="s14" ondblclick="return dblclicked(this)">Chapter K. Squad Leader Training Manual</span></a>
+<ul id="ul14"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i14.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.1" href="chk_chk1.htm" target="hmcontent"><span class="heading2" id="s14.1">K1 Training Day One: Marching</span></a>
+</li>
+<li class="heading2" id="i14.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.2" href="chk_chk2.htm" target="hmcontent"><span class="heading2" id="s14.2">K2 Training Day Two: LOS Course</span></a>
+</li>
+<li class="heading2" id="i14.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.3" href="chk_chk3.htm" target="hmcontent"><span class="heading2" id="s14.3">K3 Training Day Three: Rifle Range</span></a>
+</li>
+<li class="heading2" id="i14.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.4" href="chk_chk4.htm" target="hmcontent"><span class="heading2" id="s14.4">K4 Training Day Four: Close Combat</span></a>
+</li>
+<li class="heading2" id="i14.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.5" href="chk_chk5.htm" target="hmcontent"><span class="heading2" id="s14.5">K5 Training Day Five: Morale Indoctrination</span></a>
+</li>
+<li class="heading2" id="i14.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.6" href="chk_chk6.htm" target="hmcontent"><span class="heading2" id="s14.6">K6 Training Day Six: Concealment</span></a>
+</li>
+<li class="heading2" id="i14.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.7" href="chk_chk7.htm" target="hmcontent"><span class="heading2" id="s14.7">K7 Training Day Seven: Light Mortars and Basic Ordnance</span></a>
+</li>
+<li class="heading2" id="i14.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a14.8" href="chk_chk8.htm" target="hmcontent"><span class="heading2" id="s14.8">K8 Training Day Eight: Guns and Advanced Ordnance Principles</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i15" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a15" href="cho_chointro.htm" target="hmcontent"><span class="heading1" id="s15" ondblclick="return dblclicked(this)">Chapter O: Red Barricades</span></a>
+<ul id="ul15"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i15.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.1" href="cho_cho1.htm" target="hmcontent"><span class="heading2" id="s15.1">O1 Debris</span></a>
+</li>
+<li class="heading2" id="i15.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.2" href="cho_cho2.htm" target="hmcontent"><span class="heading2" id="s15.2">O2 Railway Embankment</span></a>
+</li>
+<li class="heading2" id="i15.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.3" href="cho_cho3.htm" target="hmcontent"><span class="heading2" id="s15.3">O3 Printed Rubble</span></a>
+</li>
+<li class="heading2" id="i15.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.4" href="cho_cho4.htm" target="hmcontent"><span class="heading2" id="s15.4">O4 Single-Hex Two-Story Building</span></a>
+</li>
+<li class="heading2" id="i15.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.5" href="cho_cho5.htm" target="hmcontent"><span class="heading2" id="s15.5">O5 Red Barricades Factories</span></a>
+</li>
+<li class="heading2" id="i15.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.6" href="cho_cho6.htm" target="hmcontent"><span class="heading2" id="s15.6">O6 Red Barricades Cellars</span></a>
+</li>
+<li class="heading2" id="i15.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.7" href="cho_cho7.htm" target="hmcontent"><span class="heading2" id="s15.7">O7 Culvert</span></a>
+</li>
+<li class="heading2" id="i15.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.8" href="cho_cho8.htm" target="hmcontent"><span class="heading2" id="s15.8">O8 Gully Hexside Entrance</span></a>
+</li>
+<li class="heading2" id="i15.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.9" href="cho_cho9.htm" target="hmcontent"><span class="heading2" id="s15.9">O9 Storage Tanks</span></a>
+</li>
+<li class="heading2" id="i15.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.10" href="cho_cho10.htm" target="hmcontent"><span class="heading2" id="s15.10">O10 MOL-Projector</span></a>
+</li>
+<li class="heading2" id="i15.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.11" href="cho_cho11.htm" target="hmcontent"><span class="heading2" id="s15.11">O11 Red Barricades Campaign Games</span></a>
+</li>
+<li class="heading2" id="i15.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.12" href="cho_chorbssr.htm" target="hmcontent"><span class="heading2" id="s15.12">Red Barricades SSR</span></a>
+</li>
+<li class="heading2" id="i15.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a15.13" href="cho_chofootnotes.htm" target="hmcontent"><span class="heading2" id="s15.13">Chapter O Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i16" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a16" href="chp_chpintro.htm" target="hmcontent"><span class="heading1" id="s16" ondblclick="return dblclicked(this)">Chapter P: Kampfgruppe Peiper</span></a>
+<ul id="ul16"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i16.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.1" href="chp_chp1.htm" target="hmcontent"><span class="heading2" id="s16.1">P1 Pine Woods</span></a>
+</li>
+<li class="heading2" id="i16.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.2" href="chp_chp2.htm" target="hmcontent"><span class="heading2" id="s16.2">P2 Slope Hexsides</span></a>
+</li>
+<li class="heading2" id="i16.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.3" href="chp_chp3.htm" target="hmcontent"><span class="heading2" id="s16.3">P3 Barbed-Wire Fences</span></a>
+</li>
+<li class="heading2" id="i16.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.4" href="chp_chp4.htm" target="hmcontent"><span class="heading2" id="s16.4">P4 Stream-Hex Terrain</span></a>
+</li>
+<li class="heading2" id="i16.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.5" href="chp_chp5.htm" target="hmcontent"><span class="heading2" id="s16.5">P5 Village Terrain</span></a>
+</li>
+<li class="heading2" id="i16.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.6" href="chp_chp6.htm" target="hmcontent"><span class="heading2" id="s16.6">P6 Hillside Walls &amp; Hedges</span></a>
+</li>
+<li class="heading2" id="i16.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.7" href="chp_chp7.htm" target="hmcontent"><span class="heading2" id="s16.7">P7 Known Minefields</span></a>
+</li>
+<li class="heading2" id="i16.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.8" href="chp_chp8.htm" target="hmcontent"><span class="heading2" id="s16.8">P8 KGP Campaign Games</span></a>
+</li>
+<li class="heading2" id="i16.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.9" href="chp_chpkgpssr.htm" target="hmcontent"><span class="heading2" id="s16.9">KGP SSR</span></a>
+</li>
+<li class="heading2" id="i16.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.10" href="chp_chprostersandmaps.htm" target="hmcontent"><span class="heading2" id="s16.10">KGP Rosters and Maps</span></a>
+</li>
+<li class="heading2" id="i16.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a16.11" href="chp_chpfootnotes.htm" target="hmcontent"><span class="heading2" id="s16.11">Chapter P Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i17" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a17" href="chq_chq1.htm" target="hmcontent"><span class="heading1" id="s17" ondblclick="return dblclicked(this)">Chapter Q: Pegasus Bridge</span></a>
+<ul id="ul17"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i17.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.1" href="chq_chq2.htm" target="hmcontent"><span class="heading2" id="s17.1">Q2 Partial Orchards</span></a>
+</li>
+<li class="heading2" id="i17.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.2" href="chq_chq3.htm" target="hmcontent"><span class="heading2" id="s17.2">Q3 Slope Hexsides</span></a>
+</li>
+<li class="heading2" id="i17.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.3" href="chq_chq4.htm" target="hmcontent"><span class="heading2" id="s17.3">Q4 Village Terrain</span></a>
+</li>
+<li class="heading2" id="i17.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.4" href="chq_chq5.htm" target="hmcontent"><span class="heading2" id="s17.4">Q5 Combination Terrain</span></a>
+</li>
+<li class="heading2" id="i17.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.5" href="chq_chq6.htm" target="hmcontent"><span class="heading2" id="s17.5">Q6 Towers</span></a>
+</li>
+<li class="heading2" id="i17.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.6" href="chq_chq7.htm" target="hmcontent"><span class="heading2" id="s17.6">Q7 Barbed-Wire Fences</span></a>
+</li>
+<li class="heading2" id="i17.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.7" href="chq_chq8.htm" target="hmcontent"><span class="heading2" id="s17.7">Q8 Hillside Walls &amp; Hedges</span></a>
+</li>
+<li class="heading2" id="i17.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.8" href="chq_chq9.htm" target="hmcontent"><span class="heading2" id="s17.8">Q9 Pegasus Bridge Campaign Game</span></a>
+</li>
+<li class="heading2" id="i17.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.9" href="chq_chqpbssr.htm" target="hmcontent"><span class="heading2" id="s17.9">Pegasus Bridge SSR</span></a>
+</li>
+<li class="heading2" id="i17.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a17.10" href="chq_chqfootnotes.htm" target="hmcontent"><span class="heading2" id="s17.10">Chapter Q Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i18" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a18" href="chr_chrintro.htm" target="hmcontent"><span class="heading1" id="s18" ondblclick="return dblclicked(this)">Chapter R: A Bridge Too Far</span></a>
+<ul id="ul18"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i18.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.1" href="chr_chr1.htm" target="hmcontent"><span class="heading2" id="s18.1">R1 Arnhem Bridge</span></a>
+</li>
+<li class="heading2" id="i18.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.2" href="chr_chr2.htm" target="hmcontent"><span class="heading2" id="s18.2">R2 The Ramp</span></a>
+</li>
+<li class="heading2" id="i18.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.3" href="chr_chr3.htm" target="hmcontent"><span class="heading2" id="s18.3">R3 Factories</span></a>
+</li>
+<li class="heading2" id="i18.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.4" href="chr_chr4.htm" target="hmcontent"><span class="heading2" id="s18.4">R4 Cellars</span></a>
+</li>
+<li class="heading2" id="i18.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.5" href="chr_chr5.htm" target="hmcontent"><span class="heading2" id="s18.5">R5 The Blockhouse</span></a>
+</li>
+<li class="heading2" id="i18.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.6" href="chr_chr6.htm" target="hmcontent"><span class="heading2" id="s18.6">R6 Unit Replacement</span></a>
+</li>
+<li class="heading2" id="i18.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.7" href="chr_chr7.htm" target="hmcontent"><span class="heading2" id="s18.7">R7 Wide City Boulevards</span></a>
+</li>
+<li class="heading2" id="i18.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.8" href="chr_chr8.htm" target="hmcontent"><span class="heading2" id="s18.8">R8 Partial Orchards</span></a>
+</li>
+<li class="heading2" id="i18.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.9" href="chr_chr9.htm" target="hmcontent"><span class="heading2" id="s18.9">R9 ABTF Campaign Games</span></a>
+</li>
+<li class="heading2" id="i18.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.10" href="chr_chrabtfssr.htm" target="hmcontent"><span class="heading2" id="s18.10">ABTF SSR</span></a>
+</li>
+<li class="heading2" id="i18.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a18.11" href="chr_chrfootnotes.htm" target="hmcontent"><span class="heading2" id="s18.11">Chapter R Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i19" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a19" href="chs_chsintro.htm" target="hmcontent"><span class="heading1" id="s19" ondblclick="return dblclicked(this)">Chapter S. Solitaire ASL</span></a>
+<ul id="ul19"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i19.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.1" href="chs_chs1.htm" target="hmcontent"><span class="heading2" id="s19.1">S1 Introduction</span></a>
+</li>
+<li class="heading2" id="i19.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.2" href="chs_chs2.htm" target="hmcontent"><span class="heading2" id="s19.2">S2 Random Events</span></a>
+</li>
+<li class="heading2" id="i19.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.3" href="chs_chs3.htm" target="hmcontent"><span class="heading2" id="s19.3">S3 S? and ENEMY Attitude</span></a>
+</li>
+<li class="heading2" id="i19.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.4" href="chs_chs4.htm" target="hmcontent"><span class="heading2" id="s19.4">S4 S? Placement and Entry</span></a>
+</li>
+<li class="heading2" id="i19.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.5" href="chs_chs5.htm" target="hmcontent"><span class="heading2" id="s19.5">S5 Activation and Generation</span></a>
+</li>
+<li class="heading2" id="i19.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.6" href="chs_chs6.htm" target="hmcontent"><span class="heading2" id="s19.6">S6 ENEMY Actions</span></a>
+</li>
+<li class="heading2" id="i19.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.7" href="chs_chs7.htm" target="hmcontent"><span class="heading2" id="s19.7">S7 RPh</span></a>
+</li>
+<li class="heading2" id="i19.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.8" href="chs_chs8.htm" target="hmcontent"><span class="heading2" id="s19.8">S8 ENEMY Attacks</span></a>
+</li>
+<li class="heading2" id="i19.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.9" href="chs_chs9.htm" target="hmcontent"><span class="heading2" id="s19.9">S9 ENEMY Movement</span></a>
+</li>
+<li class="heading2" id="i19.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.10" href="chs_chs10.htm" target="hmcontent"><span class="heading2" id="s19.10">S10 ENEMY Rout</span></a>
+</li>
+<li class="heading2" id="i19.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.11" href="chs_chs11.htm" target="hmcontent"><span class="heading2" id="s19.11">S11 ENEMY APh &amp; CCPh</span></a>
+</li>
+<li class="heading2" id="i19.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.12" href="chs_chs12.htm" target="hmcontent"><span class="heading2" id="s19.12">S12 The Missions</span></a>
+</li>
+<li class="heading2" id="i19.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.13" href="chs_chs13.htm" target="hmcontent"><span class="heading2" id="s19.13">S13 Mapboard Selection &amp; Features</span></a>
+</li>
+<li class="heading2" id="i19.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.14" href="chs_chs14.htm" target="hmcontent"><span class="heading2" id="s19.14">S14 Victory Point Objectives</span></a>
+</li>
+<li class="heading2" id="i19.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.15" href="chs_chs15.htm" target="hmcontent"><span class="heading2" id="s19.15">S15 FRIENDLY Units</span></a>
+</li>
+<li class="heading2" id="i19.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.16" href="chs_chs16.htm" target="hmcontent"><span class="heading2" id="s19.16">S16 FRIENDLY Command Control</span></a>
+</li>
+<li class="heading2" id="i19.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.17" href="chs_chs17.htm" target="hmcontent"><span class="heading2" id="s19.17">S17 Solitaire Campaign</span></a>
+</li>
+<li class="heading2" id="i19.18"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.18" href="chs_chs18.htm" target="hmcontent"><span class="heading2" id="s19.18">S18 FRIENDLY Companies</span></a>
+</li>
+<li class="heading2" id="i19.19"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a19.19" href="chs_chsfootnotes.htm" target="hmcontent"><span class="heading2" id="s19.19">Chapter S Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i20" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a20" href="cht_chtintro.htm" target="hmcontent"><span class="heading1" id="s20" ondblclick="return dblclicked(this)">Chapter T: Blood Reef: Tarawa</span></a>
+<ul id="ul20"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i20.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.1" href="cht_cht1.htm" target="hmcontent"><span class="heading2" id="s20.1">T1 Pathfinders</span></a>
+</li>
+<li class="heading2" id="i20.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.2" href="cht_cht2.htm" target="hmcontent"><span class="heading2" id="s20.2">T2 BRT Ocean &amp; Reef</span></a>
+</li>
+<li class="heading2" id="i20.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.3" href="cht_cht3.htm" target="hmcontent"><span class="heading2" id="s20.3">T3 BRT Sand</span></a>
+</li>
+<li class="heading2" id="i20.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.4" href="cht_cht4.htm" target="hmcontent"><span class="heading2" id="s20.4">T4 BRT Palm Trees</span></a>
+</li>
+<li class="heading2" id="i20.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.5" href="cht_cht5.htm" target="hmcontent"><span class="heading2" id="s20.5">T5 Printed Rubble</span></a>
+</li>
+<li class="heading2" id="i20.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.6" href="cht_cht6.htm" target="hmcontent"><span class="heading2" id="s20.6">T6 Bunkers &amp; Pillboxes</span></a>
+</li>
+<li class="heading2" id="i20.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.7" href="cht_cht7.htm" target="hmcontent"><span class="heading2" id="s20.7">T7 BRT Towers</span></a>
+</li>
+<li class="heading2" id="i20.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.8" href="cht_cht8.htm" target="hmcontent"><span class="heading2" id="s20.8">T8 Gun Emplacements</span></a>
+</li>
+<li class="heading2" id="i20.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.9" href="cht_cht9.htm" target="hmcontent"><span class="heading2" id="s20.9">T9 Port of Betio</span></a>
+</li>
+<li class="heading2" id="i20.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.10" href="cht_cht10.htm" target="hmcontent"><span class="heading2" id="s20.10">T10 Betio Seawall</span></a>
+</li>
+<li class="heading2" id="i20.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.11" href="cht_cht11.htm" target="hmcontent"><span class="heading2" id="s20.11">T11 Excavation Ditch</span></a>
+</li>
+<li class="heading2" id="i20.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.12" href="cht_cht12.htm" target="hmcontent"><span class="heading2" id="s20.12">T12 Gullies</span></a>
+</li>
+<li class="heading2" id="i20.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.13" href="cht_cht13.htm" target="hmcontent"><span class="heading2" id="s20.13">T13 Airfield</span></a>
+</li>
+<li class="heading2" id="i20.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.14" href="cht_cht14.htm" target="hmcontent"><span class="heading2" id="s20.14">T14 Off-Map Terrain</span></a>
+</li>
+<li class="heading2" id="i20.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.15" href="cht_cht15.htm" target="hmcontent"><span class="heading2" id="s20.15">T15 Blood Reef: Tarawa Campaign Games</span></a>
+</li>
+<li class="heading2" id="i20.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.16" href="cht_chtbrtssr.htm" target="hmcontent"><span class="heading2" id="s20.16">BRT SSR</span></a>
+</li>
+<li class="heading2" id="i20.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.17" href="cht_chtrosters.htm" target="hmcontent"><span class="heading2" id="s20.17">BRT Rosters</span></a>
+</li>
+<li class="heading2" id="i20.18"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.18" href="cht_chtspecificnotes.htm" target="hmcontent"><span class="heading2" id="s20.18">BRT Specific Vehicle and Ordnance Notes</span></a>
+</li>
+<li class="heading2" id="i20.19"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a20.19" href="cht_chtfootnotes.htm" target="hmcontent"><span class="heading2" id="s20.19">Chapter T Footnotes</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i21" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a21" href="chv_chvintro.htm" target="hmcontent"><span class="heading1" id="s21" ondblclick="return dblclicked(this)">Chapter V: Valor of the Guards</span></a>
+<ul id="ul21"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i21.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.1" href="chv_chv1.htm" target="hmcontent"><span class="heading2" id="s21.1">V1 Debris</span></a>
+</li>
+<li class="heading2" id="i21.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.2" href="chv_chv2.htm" target="hmcontent"><span class="heading2" id="s21.2">V2 Lumberyards</span></a>
+</li>
+<li class="heading2" id="i21.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.3" href="chv_chv3.htm" target="hmcontent"><span class="heading2" id="s21.3">V3 Railroads</span></a>
+</li>
+<li class="heading2" id="i21.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.4" href="chv_chv4.htm" target="hmcontent"><span class="heading2" id="s21.4">V4 Rail Cars</span></a>
+</li>
+<li class="heading2" id="i21.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.5" href="chv_chv5.htm" target="hmcontent"><span class="heading2" id="s21.5">V5 Printed Rubble</span></a>
+</li>
+<li class="heading2" id="i21.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.6" href="chv_chv6.htm" target="hmcontent"><span class="heading2" id="s21.6">V6 VotG Factories</span></a>
+</li>
+<li class="heading2" id="i21.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.7" href="chv_chv7.htm" target="hmcontent"><span class="heading2" id="s21.7">V7 Gutted Buildings</span></a>
+</li>
+<li class="heading2" id="i21.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.8" href="chv_chv8.htm" target="hmcontent"><span class="heading2" id="s21.8">V8 Cellars</span></a>
+</li>
+<li class="heading2" id="i21.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.9" href="chv_chv9.htm" target="hmcontent"><span class="heading2" id="s21.9">V9 Fountains</span></a>
+</li>
+<li class="heading2" id="i21.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.10" href="chv_chv10.htm" target="hmcontent"><span class="heading2" id="s21.10">V10 City Squares</span></a>
+</li>
+<li class="heading2" id="i21.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.11" href="chv_chv11.htm" target="hmcontent"><span class="heading2" id="s21.11">V11 Volga Piers</span></a>
+</li>
+<li class="heading2" id="i21.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.12" href="chv_chv12.htm" target="hmcontent"><span class="heading2" id="s21.12">V12 VotG Campaign Games</span></a>
+</li>
+<li class="heading2" id="i21.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.13" href="chv_chvspecificnotes.htm" target="hmcontent"><span class="heading2" id="s21.13">VotG Specific Vehicle Notes</span></a>
+</li>
+<li class="heading2" id="i21.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.14" href="chv_chvfootnotes.htm" target="hmcontent"><span class="heading2" id="s21.14">Chapter V Footnotes</span></a>
+</li>
+<li class="heading2" id="i21.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a21.15" href="votg_map.htm" target="hmcontent"><span class="heading2" id="s21.15">VotG Map</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i22" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a22" href="chz_chzintro.htm" target="hmcontent"><span class="heading1" id="s22" ondblclick="return dblclicked(this)">Chapter Z: Mini-Modules</span></a>
+<ul id="ul22"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i22.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a22.1" href=javascript:void(0);><span class="heading2" id="s22.1" ondblclick="return dblclicked(this)">Edson's Ridge</span></a>
+<ul id="ul22.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i22.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.1.1" href="chz_er_chzerssr.htm" target="hmcontent"><span class="heading3" id="s22.1.1">Edson's Ridge SSR</span></a>
+</li>
+<li class="heading3" id="i22.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.1.2" href="chz_er_chzercg.htm" target="hmcontent"><span class="heading3" id="s22.1.2">Edson's Ridge Campaign Games</span></a>
+</li>
+<li class="heading3" id="i22.1.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.1.3" href="chz_er_chzerextrainfo.htm" target="hmcontent"><span class="heading3" id="s22.1.3">Edson's Ridge Bombardment Plotting Sheet</span></a>
+</li>
+<li class="heading3" id="i22.1.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.1.4" href="chz_er_chzerfootnotes.htm" target="hmcontent"><span class="heading3" id="s22.1.4">Edson's Ridge Footnotes</span></a>
+</li>
+<li class="heading3" id="i22.1.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.1.5" href="edsons_ridge_map.htm" target="hmcontent"><span class="heading3" id="s22.1.5">Edson's Ridge Map</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i22.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a22.2" href=javascript:void(0);><span class="heading2" id="s22.2" ondblclick="return dblclicked(this)">Kakazu Ridge</span></a>
+<ul id="ul22.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i22.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.2.1" href="chz_kr_chzkrcg.htm" target="hmcontent"><span class="heading3" id="s22.2.1">Kakazu Ridge CG and SSR</span></a>
+</li>
+<li class="heading3" id="i22.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.2.2" href="chz_kr_chzkrfootnotes.htm" target="hmcontent"><span class="heading3" id="s22.2.2">Kakazu Ridge Footnotes</span></a>
+</li>
+<li class="heading3" id="i22.2.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.2.3" href="kakazu_ridge_map.htm" target="hmcontent"><span class="heading3" id="s22.2.3">Kakazu Ridge Map</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i22.3" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a22.3" href=javascript:void(0);><span class="heading2" id="s22.3" ondblclick="return dblclicked(this)">Primisole Bridge</span></a>
+<ul id="ul22.3"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i22.3.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.3.1" href="chz_pbr_chzpbrcg.htm" target="hmcontent"><span class="heading3" id="s22.3.1">Primisole Bridge Campaign Game</span></a>
+</li>
+<li class="heading3" id="i22.3.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.3.2" href="chz_pbr_chzpbrssr.htm" target="hmcontent"><span class="heading3" id="s22.3.2">Primisole Bridge SSR</span></a>
+</li>
+<li class="heading3" id="i22.3.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.3.3" href="chz_pbr_chzpbrfootnotes.htm" target="hmcontent"><span class="heading3" id="s22.3.3">Primisole Bridge Footnotes</span></a>
+</li>
+<li class="heading3" id="i22.3.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.3.4" href="primisole_bridge_map.htm" target="hmcontent"><span class="heading3" id="s22.3.4">Primisole Bridge Map</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i22.4" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a22.4" href=javascript:void(0);><span class="heading2" id="s22.4" ondblclick="return dblclicked(this)">Riley's Road</span></a>
+<ul id="ul22.4"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i22.4.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.4.1" href="chz_rr_chzrrcg.htm" target="hmcontent"><span class="heading3" id="s22.4.1">Riley's Road Campaign Games</span></a>
+</li>
+<li class="heading3" id="i22.4.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.4.2" href="chz_rr_chzrrssr.htm" target="hmcontent"><span class="heading3" id="s22.4.2">Riley's Road SSR</span></a>
+</li>
+<li class="heading3" id="i22.4.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.4.3" href="chz_rr_chzrrfootnotes.htm" target="hmcontent"><span class="heading3" id="s22.4.3">Riley's Road Footnotes</span></a>
+</li>
+<li class="heading3" id="i22.4.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.4.4" href="rileys_road_map.htm" target="hmcontent"><span class="heading3" id="s22.4.4">Riley's Road Map</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i22.5" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a22.5" href=javascript:void(0);><span class="heading2" id="s22.5" ondblclick="return dblclicked(this)">Singling</span></a>
+<ul id="ul22.5"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i22.5.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.5.1" href="singling.htm" target="hmcontent"><span class="heading3" id="s22.5.1">Singling Campaign Game</span></a>
+</li>
+<li class="heading3" id="i22.5.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.5.2" href="singling_map.htm" target="hmcontent"><span class="heading3" id="s22.5.2">Singling Map</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i22.6" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a22.6" href=javascript:void(0);><span class="heading2" id="s22.6" ondblclick="return dblclicked(this)">Suicide Creek</span></a>
+<ul id="ul22.6"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i22.6.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.6.1" href="suicide_creek_ssr.htm" target="hmcontent"><span class="heading3" id="s22.6.1">Suicide Creek SSR</span></a>
+</li>
+<li class="heading3" id="i22.6.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.6.2" href="suicide_creek_campaign_game.htm" target="hmcontent"><span class="heading3" id="s22.6.2">Suicide Creek Campaign Game</span></a>
+</li>
+<li class="heading3" id="i22.6.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.6.3" href="suicide_creek_map.htm" target="hmcontent"><span class="heading3" id="s22.6.3">Suicide Creek Map</span></a>
+</li>
+<li class="heading3" id="i22.6.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.6.4" href="sc_cg_roster.htm" target="hmcontent"><span class="heading3" id="s22.6.4">SC CG Roster</span></a>
+</li>
+<li class="heading3" id="i22.6.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a22.6.5" href="sc_rg_purchase_record.htm" target="hmcontent"><span class="heading3" id="s22.6.5">SC RG Purchase Record</span></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i23" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a23" href="tables.htm" target="hmcontent"><span class="heading1" id="s23" ondblclick="return dblclicked(this)">Tables</span></a>
+<ul id="ul23"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i23.1" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.1" href="chapter_a_tables.htm" target="hmcontent"><span class="heading2" id="s23.1" ondblclick="return dblclicked(this)">Chapter A Tables</span></a>
+<ul id="ul23.1"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i23.1.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.1" href="tables_a3sequenceofplay.htm" target="hmcontent"><span class="heading3" id="s23.1.1">A3 Basic Sequence of Play</span></a>
+</li>
+<li class="heading3" id="i23.1.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.2" href="a5_132_vs_overstacked_vehicles.htm" target="hmcontent"><span class="heading3" id="s23.1.2">A5.132 vs Overstacked Vehicles</span></a>
+</li>
+<li class="heading3" id="i23.1.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.3" href="tables_a7infantryfiretable.htm" target="hmcontent"><span class="heading3" id="s23.1.3">A7 Infantry Fire Table</span></a>
+</li>
+<li class="heading3" id="i23.1.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.4" href="tables_a7iift.htm" target="hmcontent"><span class="heading3" id="s23.1.4">A7 IIFT</span></a>
+</li>
+<li class="heading3" id="i23.1.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.5" href="tables_a11closecombattable.htm" target="hmcontent"><span class="heading3" id="s23.1.5">A11 Close Combat Table</span></a>
+</li>
+<li class="heading3" id="i23.1.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.6" href="tables_a11_4ambush.htm" target="hmcontent"><span class="heading3" id="s23.1.6">A11.4 Ambush Table</span></a>
+</li>
+<li class="heading3" id="i23.1.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.7" href="tables_a12_121concealmentgain-losstable.htm" target="hmcontent"><span class="heading3" id="s23.1.7">A12.121 Concealment Gain/Loss Tables</span></a>
+</li>
+<li class="heading3" id="i23.1.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.8" href="a12_122_concealment_drm.htm" target="hmcontent"><span class="heading3" id="s23.1.8">A12.122 Concealment drm</span></a>
+</li>
+<li class="heading3" id="i23.1.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.9" href="a12_152_searching.htm" target="hmcontent"><span class="heading3" id="s23.1.9">A12.152 Searching</span></a>
+</li>
+<li class="heading3" id="i23.1.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.10" href="a14_3_sniper_attack__a14_4_sni.htm" target="hmcontent"><span class="heading3" id="s23.1.10">A14.3 Sniper Attack &amp; A14.4 Sniper Check DRM</span></a>
+</li>
+<li class="heading3" id="i23.1.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.11" href="a15_1_heat_of_battle.htm" target="hmcontent"><span class="heading3" id="s23.1.11">A15.1 Heat of Battle</span></a>
+</li>
+<li class="heading3" id="i23.1.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.12" href="a16_battlefield_integrity.htm" target="hmcontent"><span class="heading3" id="s23.1.12">A16 Battlefield Integrity</span></a>
+</li>
+<li class="heading3" id="i23.1.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.13" href="tables_a17wounds.htm" target="hmcontent"><span class="heading3" id="s23.1.13">A17 Wound Table</span></a>
+</li>
+<li class="heading3" id="i23.1.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.14" href="a18_2_leader_creation.htm" target="hmcontent"><span class="heading3" id="s23.1.14">A18.2 Leader Creation</span></a>
+</li>
+<li class="heading3" id="i23.1.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.15" href="a24_smoke_summary.htm" target="hmcontent"><span class="heading3" id="s23.1.15">A24 SMOKE Summary</span></a>
+</li>
+<li class="heading3" id="i23.1.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.1.16" href="a26_2-_23_victory_points_vp.htm" target="hmcontent"><span class="heading3" id="s23.1.16">A26.2-.23 Victory Points (VP)</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i23.2" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.2" href="chapter_b_tables.htm" target="hmcontent"><span class="heading2" id="s23.2" ondblclick="return dblclicked(this)">Chapter B Tables</span></a>
+<ul id="ul23.2"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i23.2.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.1" href="b24_11_rubble_creation_by_he_a.htm" target="hmcontent"><span class="heading3" id="s23.2.1">B24.11 Rubble Creation by HE Attack</span></a>
+</li>
+<li class="heading3" id="i23.2.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.2" href="b24_7_clearance_attempts__drm.htm" target="hmcontent"><span class="heading3" id="s23.2.2">B24.7 Clearance Attempts &amp; DRM</span></a>
+</li>
+<li class="heading3" id="i23.2.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.3" href="b25_11_kindling_attempt.htm" target="hmcontent"><span class="heading3" id="s23.2.3">B25.11 Kindling Attempt</span></a>
+</li>
+<li class="heading3" id="i23.2.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.4" href="b25_13_he_fires.htm" target="hmcontent"><span class="heading3" id="s23.2.4">B25.13 HE Fires</span></a>
+</li>
+<li class="heading3" id="i23.2.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.5" href="b25_5_environmental_conditions.htm" target="hmcontent"><span class="heading3" id="s23.2.5">B25.5 Environmental Conditions Chart</span></a>
+</li>
+<li class="heading3" id="i23.2.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.6" href="b25_6_spreading_fire_drm.htm" target="hmcontent"><span class="heading3" id="s23.2.6">B25.6 Spreading Fire Tables</span></a>
+</li>
+<li class="heading3" id="i23.2.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.7" href="b25_63_wind_force.htm" target="hmcontent"><span class="heading3" id="s23.2.7">B25.63 Wind Force</span></a>
+</li>
+<li class="heading3" id="i23.2.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.8" href="b25_65_wind_change.htm" target="hmcontent"><span class="heading3" id="s23.2.8">B25.65 Wind Change</span></a>
+</li>
+<li class="heading3" id="i23.2.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.2.9" href="b__railroad_movement_chart.htm" target="hmcontent"><span class="heading3" id="s23.2.9">B32. Railroad Movement Chart</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i23.3" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.3" href="chapter_c_tables.htm" target="hmcontent"><span class="heading2" id="s23.3" ondblclick="return dblclicked(this)">Chapter C Tables</span></a>
+<ul id="ul23.3"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i23.3.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.1" href="c2_21_gun_size.htm" target="hmcontent"><span class="heading3" id="s23.3.1">C2.21 Gun Size</span></a>
+</li>
+<li class="heading3" id="i23.3.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.2" href="c2_5_conditional_rof.htm" target="hmcontent"><span class="heading3" id="s23.3.2">C2.5 Conditional ROF</span></a>
+</li>
+<li class="heading3" id="i23.3.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.3" href="c2_6_gun_elevation_depression.htm" target="hmcontent"><span class="heading3" id="s23.3.3">C2.6 Gun Elevation/Depression</span></a>
+</li>
+<li class="heading3" id="i23.3.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.4" href="tables_c3tohittable.htm" target="hmcontent"><span class="heading3" id="s23.3.4">C3 To Hit Table</span></a>
+</li>
+<li class="heading3" id="i23.3.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.5" href="c3_6_improbable_hits.htm" target="hmcontent"><span class="heading3" id="s23.3.5">C3.6 Improbable Hits</span></a>
+</li>
+<li class="heading3" id="i23.3.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.6" href="c3_7_critical_hits.htm" target="hmcontent"><span class="heading3" id="s23.3.6">C3.7 Critical Hits</span></a>
+</li>
+<li class="heading3" id="i23.3.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.7" href="c3_8_multiple_hits.htm" target="hmcontent"><span class="heading3" id="s23.3.7">C3.8 Multiple Hits</span></a>
+</li>
+<li class="heading3" id="i23.3.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.8" href="c3_9_location_of_vehicular_hit.htm" target="hmcontent"><span class="heading3" id="s23.3.8">C3.9 Location of Vehicular Hit</span></a>
+</li>
+<li class="heading3" id="i23.3.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.9" href="tables_c5firer-basedthdrm.htm" target="hmcontent"><span class="heading3" id="s23.3.9">C5 Firer-Based TH DRM</span></a>
+</li>
+<li class="heading3" id="i23.3.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.10" href="tables_c6target-basedthdrm.htm" target="hmcontent"><span class="heading3" id="s23.3.10">C6 Target-Based TH DRM</span></a>
+</li>
+<li class="heading3" id="i23.3.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.11" href="c6_5_acquisition_loss.htm" target="hmcontent"><span class="heading3" id="s23.3.11">C6.5 Acquisition Loss</span></a>
+</li>
+<li class="heading3" id="i23.3.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.12" href="c7_11_obtaining_final_tk.htm" target="hmcontent"><span class="heading3" id="s23.3.12">C7.11 Obtaining Final TK#</span></a>
+</li>
+<li class="heading3" id="i23.3.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.13" href="c7_2_obtaining_modified_tk.htm" target="hmcontent"><span class="heading3" id="s23.3.13">C7.2 Obtaining Modified TK#</span></a>
+</li>
+<li class="heading3" id="i23.3.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.14" href="tables_c7_31aptktable.htm" target="hmcontent"><span class="heading3" id="s23.3.14">C7.31 AP To Kill Table</span></a>
+</li>
+<li class="heading3" id="i23.3.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.15" href="tables_c7_32apcr-apdstktable.htm" target="hmcontent"><span class="heading3" id="s23.3.15">C7.32 APCR/APDS To Kill Table</span></a>
+</li>
+<li class="heading3" id="i23.3.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.16" href="tables_c7_33heattktable.htm" target="hmcontent"><span class="heading3" id="s23.3.16">C7.33 HEAT To Kill Table</span></a>
+</li>
+<li class="heading3" id="i23.3.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.17" href="tables_c7_34heandflametktable.htm" target="hmcontent"><span class="heading3" id="s23.3.17">C7.34 HE and Flame To Kill Table</span></a>
+</li>
+<li class="heading3" id="i23.3.18"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.18" href="c7_346_dc_placement_vs_afv_dr.htm" target="hmcontent"><span class="heading3" id="s23.3.18">C7.346 DC Placement vs AFV DR</span></a>
+</li>
+<li class="heading3" id="i23.3.19"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.19" href="c7_35_dud.htm" target="hmcontent"><span class="heading3" id="s23.3.19">C7.35 Dud</span></a>
+</li>
+<li class="heading3" id="i23.3.20"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.20" href="c8_31_he_equivalency.htm" target="hmcontent"><span class="heading3" id="s23.3.20">C8.31 HE Equivalency</span></a>
+</li>
+<li class="heading3" id="i23.3.21"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.21" href="c8_4_canister_fp.htm" target="hmcontent"><span class="heading3" id="s23.3.21">C8.4 Canister FP</span></a>
+</li>
+<li class="heading3" id="i23.3.22"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.22" href="c10_3_gun_manhandling_number_m.htm" target="hmcontent"><span class="heading3" id="s23.3.22">C10.3 Gun Manhandling Number Modifications</span></a>
+</li>
+<li class="heading3" id="i23.3.23"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.23" href="c11_6_gun_destruction_table.htm" target="hmcontent"><span class="heading3" id="s23.3.23">C11.6 Gun Destruction Table</span></a>
+</li>
+<li class="heading3" id="i23.3.24"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.24" href="c13_3_panzerfaust.htm" target="hmcontent"><span class="heading3" id="s23.3.24">C13.3 Panzerfaust</span></a>
+</li>
+<li class="heading3" id="i23.3.25"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.3.25" href="c13_7_anti-tank_magnetic_mine.htm" target="hmcontent"><span class="heading3" id="s23.3.25">C13.7 Anti-Tank Magnetic Mine</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i23.4" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.4" href="chapter_d_tables.htm" target="hmcontent"><span class="heading2" id="s23.4" ondblclick="return dblclicked(this)">Chapter D Tables</span></a>
+<ul id="ul23.4"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i23.4.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.1" href="d1_8_vehicular_mg.htm" target="hmcontent"><span class="heading3" id="s23.4.1">D1.8 Vehicular MG</span></a>
+</li>
+<li class="heading3" id="i23.4.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.2" href="d2_non-terrain_related_vehicul.htm" target="hmcontent"><span class="heading3" id="s23.4.2">D2 Non-Terrain Related Vehicular MP Expenditures</span></a>
+</li>
+<li class="heading3" id="i23.4.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.3" href="d2_5_excessive_speed_breakdown.htm" target="hmcontent"><span class="heading3" id="s23.4.3">D2.5 Excessive Speed Breakdown DRM</span></a>
+</li>
+<li class="heading3" id="i23.4.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.4" href="d3_afv_phase_motion_fire_modif.htm" target="hmcontent"><span class="heading3" id="s23.4.4">D3 AFV Phase/Motion Fire Modifiers</span></a>
+</li>
+<li class="heading3" id="i23.4.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.5" href="d3_2_target_facing.htm" target="hmcontent"><span class="heading3" id="s23.4.5">D3.2 Target Facing</span></a>
+</li>
+<li class="heading3" id="i23.4.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.6" href="d4_22_hd_maneuver_attempt.htm" target="hmcontent"><span class="heading3" id="s23.4.6">D4.22 HD Maneuver Attempt</span></a>
+</li>
+<li class="heading3" id="i23.4.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.7" href="d4_3_underbelly_hit.htm" target="hmcontent"><span class="heading3" id="s23.4.7">D4.3 Underbelly Hit</span></a>
+</li>
+<li class="heading3" id="i23.4.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.8" href="d5_34-_43_stun_recall__c7_4_sh.htm" target="hmcontent"><span class="heading3" id="s23.4.8">D5.34-.43 Stun/Recall &amp; C7.4 Shock/UK</span></a>
+</li>
+<li class="heading3" id="i23.4.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.9" href="tables_7_7afvdestructiontable.htm" target="hmcontent"><span class="heading3" id="s23.4.9">D7.7 AFV Destruction Table</span></a>
+</li>
+<li class="heading3" id="i23.4.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.10" href="d8_21_bog_check_drm.htm" target="hmcontent"><span class="heading3" id="s23.4.10">D8.21 Bog Check DRM</span></a>
+</li>
+<li class="heading3" id="i23.4.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.4.11" href="d8_3_bog_removal.htm" target="hmcontent"><span class="heading3" id="s23.4.11">D8.3 Bog Removal</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i23.5" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.5" href="chapter_e_tables.htm" target="hmcontent"><span class="heading2" id="s23.5" ondblclick="return dblclicked(this)">Chapter E Tables</span></a>
+<ul id="ul23.5"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i23.5.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.1" href="e1_1-_15_line_of_sight.htm" target="hmcontent"><span class="heading3" id="s23.5.1">E1.1-.15 Line of Sight</span></a>
+</li>
+<li class="heading3" id="i23.5.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.2" href="e1_12_nvr_change.htm" target="hmcontent"><span class="heading3" id="s23.5.2">E1.12 NVR Change</span></a>
+</li>
+<li class="heading3" id="i23.5.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.3" href="e1_16-_21_defense.htm" target="hmcontent"><span class="heading3" id="s23.5.3">E1.16-.21 Defense</span></a>
+</li>
+<li class="heading3" id="i23.5.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.4" href="e1_21_freedom_of_movement.htm" target="hmcontent"><span class="heading3" id="s23.5.4">E1.21 Freedom of Movement</span></a>
+</li>
+<li class="heading3" id="i23.5.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.5" href="e1_23_recon_drm.htm" target="hmcontent"><span class="heading3" id="s23.5.5">E1.23 Recon drm</span></a>
+</li>
+<li class="heading3" id="i23.5.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.6" href="e1_3-_43_concealment_cloaking.htm" target="hmcontent"><span class="heading3" id="s23.5.6">E1.3-.43 Concealment/Cloaking</span></a>
+</li>
+<li class="heading3" id="i23.5.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.7" href="e1_5_movement_phase.htm" target="hmcontent"><span class="heading3" id="s23.5.7">E1.5 Movement Phase</span></a>
+</li>
+<li class="heading3" id="i23.5.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.8" href="e1_53__e1_55_straying.htm" target="hmcontent"><span class="heading3" id="s23.5.8">E1.53; E1.55 Straying</span></a>
+</li>
+<li class="heading3" id="i23.5.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.9" href="e1_54_routing.htm" target="hmcontent"><span class="heading3" id="s23.5.9">E1.54 Routing</span></a>
+</li>
+<li class="heading3" id="i23.5.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.10" href="e1_55_jitter_fire.htm" target="hmcontent"><span class="heading3" id="s23.5.10">E1.55 Jitter Fire</span></a>
+</li>
+<li class="heading3" id="i23.5.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.11" href="e1_7-_88_combat.htm" target="hmcontent"><span class="heading3" id="s23.5.11">E1.7-.88 Combat</span></a>
+</li>
+<li class="heading3" id="i23.5.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.12" href="e1_76_mistaken_fire.htm" target="hmcontent"><span class="heading3" id="s23.5.12">E1.76 Mistaken Fire</span></a>
+</li>
+<li class="heading3" id="i23.5.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.13" href="e1_77_close_combat.htm" target="hmcontent"><span class="heading3" id="s23.5.13">E1.77 Close Combat</span></a>
+</li>
+<li class="heading3" id="i23.5.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.14" href="e1_92-_93_starshells_ir.htm" target="hmcontent"><span class="heading3" id="s23.5.14">E1.92-.93 Starshells/IR</span></a>
+</li>
+<li class="heading3" id="i23.5.15"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.15" href="e1_94_fires.htm" target="hmcontent"><span class="heading3" id="s23.5.15">E1.94 Fires</span></a>
+</li>
+<li class="heading3" id="i23.5.16"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.16" href="e2_2_interrogation_table.htm" target="hmcontent"><span class="heading3" id="s23.5.16">E2.2 Interrogation Table</span></a>
+</li>
+<li class="heading3" id="i23.5.17"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.17" href="e2_42_information_table.htm" target="hmcontent"><span class="heading3" id="s23.5.17">E2.42 Information Table</span></a>
+</li>
+<li class="heading3" id="i23.5.18"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.18" href="e3__dyo_temperate_weather_char.htm" target="hmcontent"><span class="heading3" id="s23.5.18">E3. DYO Temperate Weather Chart</span></a>
+</li>
+<li class="heading3" id="i23.5.19"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.19" href="e3_31_fog_level.htm" target="hmcontent"><span class="heading3" id="s23.5.19">E3.31 Fog Level</span></a>
+</li>
+<li class="heading3" id="i23.5.20"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.20" href="e3_311_fog_density.htm" target="hmcontent"><span class="heading3" id="s23.5.20">E3.311 Fog Density</span></a>
+</li>
+<li class="heading3" id="i23.5.21"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.21" href="e3_7_dyo_snow_chart.htm" target="hmcontent"><span class="heading3" id="s23.5.21">E3.7 DYO Snow Chart</span></a>
+</li>
+<li class="heading3" id="i23.5.22"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.22" href="e7_22-_221_dogfight_dr_summary.htm" target="hmcontent"><span class="heading3" id="s23.5.22">E7.22-.221 Dogfight DR Summary</span></a>
+</li>
+<li class="heading3" id="i23.5.23"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.5.23" href="e8_23_glider_crash_table.htm" target="hmcontent"><span class="heading3" id="s23.5.23">E8.23 Glider Crash Table</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i23.6" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.6" href="chapter_f_tables.htm" target="hmcontent"><span class="heading2" id="s23.6" ondblclick="return dblclicked(this)">Chapter F Tables</span></a>
+<ul id="ul23.6"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i23.6.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.6.1" href="f3_31_hammada_immobilization_d.htm" target="hmcontent"><span class="heading3" id="s23.6.1">F3.31 Hammada Immobilization DR</span></a>
+</li>
+<li class="heading3" id="i23.6.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.6.2" href="f7_31_sand_bog_dr.htm" target="hmcontent"><span class="heading3" id="s23.6.2">F7.31 Sand Bog DR</span></a>
+</li>
+<li class="heading3" id="i23.6.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.6.3" href="f11_1_arid_climate_summary.htm" target="hmcontent"><span class="heading3" id="s23.6.3">F11.1 Arid Climate Summary</span></a>
+</li>
+<li class="heading3" id="i23.6.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.6.4" href="f11_2_arid_weather_chart.htm" target="hmcontent"><span class="heading3" id="s23.6.4">F11.2 Arid Weather Chart</span></a>
+</li>
+<li class="heading3" id="i23.6.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.6.5" href="f11_3_time_of_day_table.htm" target="hmcontent"><span class="heading3" id="s23.6.5">F11.3 Time of Day Table</span></a>
+</li>
+<li class="heading3" id="i23.6.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.6.6" href="f11_4_arid_ec_chart.htm" target="hmcontent"><span class="heading3" id="s23.6.6">F11.4 Arid EC Chart</span></a>
+</li>
+<li class="heading3" id="i23.6.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.6.7" href="f11_5_arid_wind_force_table.htm" target="hmcontent"><span class="heading3" id="s23.6.7">F11.5 Arid Wind Force Table</span></a>
+</li>
+<li class="heading3" id="i23.6.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.6.8" href="f11_701_dyo_dust_table.htm" target="hmcontent"><span class="heading3" id="s23.6.8">F11.701 DYO Dust Table</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i23.7" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.7" href="chapter_g_tables.htm" target="hmcontent"><span class="heading2" id="s23.7" ondblclick="return dblclicked(this)">Chapter G Tables</span></a>
+<ul id="ul23.7"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i23.7.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.1" href="g1_421_tank-hunter_hero_creati.htm" target="hmcontent"><span class="heading3" id="s23.7.1">G1.421 Tank-Hunter Hero Creation</span></a>
+</li>
+<li class="heading3" id="i23.7.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.2" href="g1_4231_tank-hunter_hero_atmm.htm" target="hmcontent"><span class="heading3" id="s23.7.2">G1.4231 Tank-Hunter Hero ATMM</span></a>
+</li>
+<li class="heading3" id="i23.7.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.3" href="g8_1_rice_paddy_state.htm" target="hmcontent"><span class="heading3" id="s23.7.3">G8.1 Rice Paddy State</span></a>
+</li>
+<li class="heading3" id="i23.7.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.4" href="g10_4_animal-pack_gun_vulnerab.htm" target="hmcontent"><span class="heading3" id="s23.7.4">G10.4 Animal-Pack Gun Vulnerability Table</span></a>
+</li>
+<li class="heading3" id="i23.7.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.5" href="g11_833_thrown-dc_dr.htm" target="hmcontent"><span class="heading3" id="s23.7.5">G11.833 Thrown-DC dr</span></a>
+</li>
+<li class="heading3" id="i23.7.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.6" href="g12_12_lc_passenger_pp_cost.htm" target="hmcontent"><span class="heading3" id="s23.7.6">G12.12 LC Passenger PP Cost</span></a>
+</li>
+<li class="heading3" id="i23.7.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.7" href="g12_21_lc_aground_bog_dr.htm" target="hmcontent"><span class="heading3" id="s23.7.7">G12.21 LC Aground (Bog) DR</span></a>
+</li>
+<li class="heading3" id="i23.7.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.8" href="g12_211_lc_fast-aground_unbogg.htm" target="hmcontent"><span class="heading3" id="s23.7.8">G12.211 LC Fast-Aground (Unbogging) dr</span></a>
+</li>
+<li class="heading3" id="i23.7.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.9" href="g12_4_lc_unloading_chart.htm" target="hmcontent"><span class="heading3" id="s23.7.9">G12.4 LC (Un)Loading Chart</span></a>
+</li>
+<li class="heading3" id="i23.7.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.10" href="g13_4222_swamping_dr.htm" target="hmcontent"><span class="heading3" id="s23.7.10">G13.4222 Swamping DR</span></a>
+</li>
+<li class="heading3" id="i23.7.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.11" href="g13_441_heavy-surf_swamping_dr.htm" target="hmcontent"><span class="heading3" id="s23.7.11">G13.441 Heavy-Surf Swamping DR</span></a>
+</li>
+<li class="heading3" id="i23.7.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.7.12" href="g13_442_heavy-surf_unbeaching_.htm" target="hmcontent"><span class="heading3" id="s23.7.12">G13.442 Heavy-Surf (Un)Beaching DR</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i23.8" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.8" href="general_tables.htm" target="hmcontent"><span class="heading2" id="s23.8" ondblclick="return dblclicked(this)">General Tables</span></a>
+<ul id="ul23.8"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading3" id="i23.8.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.1" href="tables_agnationalitychart.htm" target="hmcontent"><span class="heading3" id="s23.8.1">A/G National Capabilities Chart</span></a>
+</li>
+<li class="heading3" id="i23.8.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.2" href="b__terrain_effects_chart.htm" target="hmcontent"><span class="heading3" id="s23.8.2">B. Terrain Effects Chart</span></a>
+</li>
+<li class="heading3" id="i23.8.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.3" href="dto_terrain_chart.htm" target="hmcontent"><span class="heading3" id="s23.8.3">DTO Terrain Chart</span></a>
+</li>
+<li class="heading3" id="i23.8.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.4" href="kindling_numbers.htm" target="hmcontent"><span class="heading3" id="s23.8.4">Kindling Numbers</span></a>
+</li>
+<li class="heading3" id="i23.8.5"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.5" href="lowered_lost_rof.htm" target="hmcontent"><span class="heading3" id="s23.8.5">Lowered/Lost ROF</span></a>
+</li>
+<li class="heading3" id="i23.8.6"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.6" href="original_11dr_summary.htm" target="hmcontent"><span class="heading3" id="s23.8.6">Original 11 DR Summary</span></a>
+</li>
+<li class="heading3" id="i23.8.7"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.7" href="original_2_12_dr_summary.htm" target="hmcontent"><span class="heading3" id="s23.8.7">Original 2/12 DR Summary</span></a>
+</li>
+<li class="heading3" id="i23.8.8"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.8" href="original_doubles_dr_summary.htm" target="hmcontent"><span class="heading3" id="s23.8.8">Original Doubles DR Summary</span></a>
+</li>
+<li class="heading3" id="i23.8.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.9" href="original_final_colored_dr_in_d.htm" target="hmcontent"><span class="heading3" id="s23.8.9">Original/Final Colored dr in DR Summary</span></a>
+</li>
+<li class="heading3" id="i23.8.10"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.10" href="pto_date-dependant_rules.htm" target="hmcontent"><span class="heading3" id="s23.8.10">PTO Date-Dependant Rules</span></a>
+</li>
+<li class="heading3" id="i23.8.11"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.11" href="pto_terrain_chart.htm" target="hmcontent"><span class="heading3" id="s23.8.11">PTO Terrain Chart</span></a>
+</li>
+<li class="heading3" id="i23.8.12"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.12" href="unarmored_vehicle_destruction_.htm" target="hmcontent"><span class="heading3" id="s23.8.12">Unarmored Vehicle Destruction Table</span></a>
+</li>
+<li class="heading3" id="i23.8.13"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.13" href="support_weapons_chart.htm" target="hmcontent"><span class="heading3" id="s23.8.13">Support Weapons Chart</span></a>
+</li>
+<li class="heading3" id="i23.8.14"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading3" id="a23.8.14" href="h1_531_air_support_availabilit.htm" target="hmcontent"><span class="heading3" id="s23.8.14">H1.531 Air Support Availability Table</span></a>
+</li>
+</ul>
+</li>
+<li class="heading2" id="i23.9"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a23.9" href="tables_addme.htm" target="hmcontent"><span class="heading2" id="s23.9">This needs to be added</span></a>
+</li>
+</ul>
+</li>
+<li class="heading1" id="i24" data-bg="cicon5.gif;cicon6.gif"style="background:url(cicon6.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading1" id="a24" href="perry_sez2.htm" target="hmcontent"><span class="heading1" id="s24" ondblclick="return dblclicked(this)">Perry Sez</span></a>
+<ul id="ul24"style="list-style-type:none;margin-left:0px;padding:0">
+<li class="heading2" id="i24.1"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a24.1" href="scenarios.htm" target="hmcontent"><span class="heading2" id="s24.1">Scenarios</span></a>
+</li>
+<li class="heading2" id="i24.2"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a24.2" href="rules.htm" target="hmcontent"><span class="heading2" id="s24.2">Rules</span></a>
+</li>
+<li class="heading2" id="i24.3"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a24.3" href="ps_index.htm" target="hmcontent"><span class="heading2" id="s24.3">PS Index</span></a>
+</li>
+<li class="heading2" id="i24.4"style="background:url(cicon11.gif) no-repeat;margin-top:2px;margin-left:0;padding-left:20px" onclick="return clicked(this,event)"><a class="heading2" id="a24.4" href="obsolete_qa.htm" target="hmcontent"><span class="heading2" id="s24.4">Obsolete Q&amp;A</span></a>
+</li>
+</ul>
+</li>
+</ul>
+<script type="text/javascript">loadicons('cicon6.gif','cicon5.gif','cicon11.gif');</script>
+
+<hr size="1" /><p style="font-size: 8pt">&nbsp;</p>
+</body>
+</html>
